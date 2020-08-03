@@ -1,0 +1,226 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <button type="button" class="logo-btn">We're Publishing!</button>
+    </div>
+    <div class="col-md-6 center center-header">
+      <div class="titles-header ">
+        <span>Titles</span><span class="header-titles">{{publications.length}} </span>
+        <span>Genres</span><span class="header-titles">{{openPublicationGenresCount}}</span>
+      </div>
+    </div>
+    <div class="col-md-3 right right-header pull-right">
+      <div class="titles-header">
+        <i class="fa fa-bars" aria-hidden="true" [ngClass]="{ 'col-blue': !gridView, 'col-black': gridView }"
+          (click)="renderView('list')" [ngStyle]="{ 'margin-right': gridView ? '20px' : '20px' }"></i>
+        <i class="fa fa-th" aria-hidden="true" [ngClass]="{ 'col-blue': gridView, 'col-black': !gridView }"
+          (click)="renderView('grid')"></i>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" [ngClass]="{'publish-body' : gridView}">
+    <div class="hero-area container" *ngIf="gridView">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12" *ngFor="let row of publications;let i=index;">
+
+          <div class="left_sidebar">
+            <div class="row">
+              <div class="col-lg-5 col-12">
+                <div class="left_sidebar_img">
+                  <img src="{{url}}/images/{{row.mediaCover}}" alt="">
+                </div>
+
+                <div class="publisher_desc">
+                  <span>Publisher:</span>
+                  <div class="publisher_name">
+                    <div>
+                      <img src="/assets/images/publisher.svg" alt="">
+                      <span class="name">Daniel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-12">
+                <h3 class="text-uppercase">{{row.title}}</h3>
+                <p [innerHTML]="getBrief(row.brief)">
+
+                </p>
+                <div class="classic_details">
+                  <div class="classic_post">
+                    <p>Genres: <span *ngFor="let genre of row.genres">{{ genre.title }}, </span></p>
+                    <p>Age Group: <span *ngFor="let age of row.ageGroup"> {{age.ageRange.join('-') }}years</span></p>
+                    <p>Word Count: <span>{{row.wordCount.join('-')}}</span></p>
+                    <p>Closing Date: <span>{{ row.closingDate |  date: "MMM dd, yyyy" }}</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-12">
+                <div class="follow_details top-fix">
+                  <div class="follow_links">
+                    <p>
+                      <i class="fa fa-share col-blue share-icons"></i>
+                      <span class="span_top_likes">
+                        Share
+                      </span>
+                    </p>
+                    <p class="book_mark_link"><i class="fa fa-bookmark-o"></i>
+                      <span class="clr-blk">Bookmark</span>
+                    </p>
+                  </div>
+
+
+                  <div class="follow_btn">
+                    <a href="publishing.html">Write</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" *ngIf="!gridView">
+    <div class="top-body">
+      <!-- bars -->
+      <div class="row center table-header">
+        <p class="col-md-1">S.No</p>
+        <p class="col-md-3">Title/Brief</p>
+        <p class="col-md-1">Genres</p>
+        <p class="col-md-2">Languages/Category</p>
+        <p class="col-md-2">Closing Date</p>
+        <p class="col-md-2">Publisher</p>
+        <p class="col-md-1"></p>
+      </div>
+      <!-- publishing body -->
+      <div class="row table-row" *ngFor="let row of publications;let i=index;let even=even;let odd=odd;"
+        [ngClass]="{'background-light-blue':even, ' background-light-pink':odd }">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="row title-option">
+            <div class="col-md-4 right img-div">
+              <img class="option-img" src="{{url}}/images/{{row.mediaCover}}" />
+              <div class="video-icon">
+                <i class="fa fa-file-video-o" aria-hidden="true"></i> Video
+              </div>
+            </div>
+            <div class="col-md-8">
+              <p class="option-heading">
+                {{row.title}}
+              </p>
+              <p class="option-description" [innerHTML]="row.brief.substr(0,100)"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <span *ngFor="let genre of row.genres">
+            {{ genre.title | titlecase }},
+          </span>
+        </div>
+        <div class="col-md-2">
+          {{row.language}}
+        </div>
+        <div class="col-md-2">{{ row.closingDate | date: 'MMM dd, yyyy'}}</div>
+        <div class="col-md-2">Admin</div>
+        <div class="col-md-1 right">
+          <button type="button" class="write-on-this-btn">
+            Write
+          </button>
+          <div class="follow-span">
+            <i class="fa fa-commenting color-red"></i>
+            <span>Follow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <h4 class="load-more">Load More...</h4>
+    <div class="carousel-cont">
+      <div class="carousel-headings text-center">
+        <p> <span class="color-pink">Su</span>ggested Publishing</p>
+      </div>
+      <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="false"
+        [indicatorsByChunk]="true">
+        <slide *ngFor="let slide of slides; let index=index" class="slider-cont">
+          <div class="row">
+            <div class="col-md-4">
+              <img [src]="slide.image" alt="image slide" class="slider-img">
+            </div>
+            <div class="col-md-8 text-justify">
+              <h6 class="novel-title">ONE NOVELIST'S APPROACH ELISABETH GEORGE</h6>
+              <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                elit.Impedit debitis doloremque at quos non officiis.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="carousel-caption">
+            <!-- <p>- John Doe</p>
+            <span class="firm_name">ABC Company</span> -->
+          </div>
+        </slide>
+      </carousel>
+    </div>
+    <div class="carousel-cont">
+      <div class="carousel-headings text-center">
+        <p> <span class="color-pink">Yo</span>ur Followings</p>
+      </div>
+      <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="false"
+        [indicatorsByChunk]="true">
+        <slide *ngFor="let slide of slides; let index=index" class="slider-cont">
+          <div class="row">
+            <div class="col-md-4">
+              <img [src]="slide.image" alt="image slide" class="slider-img">
+            </div>
+            <div class="col-md-8 text-justify">
+              <h6 class="novel-title">ONE NOVELIST'S APPROACH ELISABETH GEORGE</h6>
+              <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                elit.Impedit debitis doloremque at quos non officiis.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="carousel-caption">
+            <!-- <p>- John Doe</p>
+            <span class="firm_name">ABC Company</span> -->
+          </div>
+        </slide>
+      </carousel>
+    </div>
+    <div class="carousel-cont">
+      <div class="carousel-headings text-center">
+        <p> <span class="color-pink">Yo</span>ur Recent Writing Selections</p>
+      </div>
+      <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="false"
+        [indicatorsByChunk]="true">
+        <slide *ngFor="let slide of slides; let index=index" class="slider-cont">
+          <div class="row">
+            <div class="col-md-4">
+              <img [src]="slide.image" alt="image slide" class="slider-img">
+            </div>
+            <div class="col-md-8 text-justify">
+              <h6 class="novel-title">ONE NOVELIST'S APPROACH ELISABETH GEORGE</h6>
+              <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                elit.Impedit debitis doloremque at quos non officiis.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="carousel-caption">
+            <!-- <p>- John Doe</p>
+            <span class="firm_name">ABC Company</span> -->
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>

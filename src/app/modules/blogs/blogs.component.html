@@ -1,0 +1,278 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <button href="#" type="button" class="logo-btn" style="box-shadow:0px 0px 23px 1px #dbd8d8;">Blog</button>
+    </div>
+  </div>
+
+</div>
+<div class="container-fluid ">
+  <div class="row">
+    
+    <div class="col-md-12 text-center set_padding">
+     <!-- <img src="{{url}}/images/{{blog.media}}" *ngIf="blog && blog.media" class="hunt-img">-->
+     <img src="{{url}}/images/{{blog.media}}" *ngIf="blog && blog.media" class="hunt-img"
+          onerror="javascript:this.src='/assets/images/blog_img.jpg'" />
+    </div>
+    
+  </div>
+</div>
+<div class="container-fluid center blog-body">
+  <div class="row">
+  
+    <div class="col-md-12">
+
+      <div class="date-blg">
+        <span class="date" *ngIf="blog && blog.content"> {{blog.createdAt | date: 'MMM dd, yyyy'}}</span>
+      </div>
+
+      <h3 class="rsp-hd heading_views"><strong>{{blog?.title}}</strong></h3>
+
+
+
+      <div class="text-style maing_tops formeting">
+        <p [innerHTML]="blog.content" *ngIf="blog && blog.content">
+       
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row left-barSeprate" style="padding: 20px 0 40px 0;">
+   
+    <div class="col-md-6 padding_set">
+
+<div class="rading_count">
+  <div class="icons-res deicons">
+
+
+    <span class="icon-3 set_vis_slt">
+      <img src="/assets/images/blog-book.svg">
+    </span>
+
+
+    <div class="icon-txt">
+      <span>{{blog?.readCount?.length || '0'}}</span><br>
+      <span class="info-icon" style="float: left;border-top: 1px solid;">Reads</span>
+    </div>
+    
+  
+  </div>
+</div>
+<div class="inner_socila_views">
+  <div _ngcontent-tja-c6="" class="icon_share_views"><a _ngcontent-tja-c6=""><img _ngcontent-tja-c6="" alt="" src="assets/images/hrt_icon.png"></a><a _ngcontent-tja-c6=""><img _ngcontent-tja-c6="" alt="" src="assets/images/share_icon.png"></a><a _ngcontent-tja-c6=""><img _ngcontent-tja-c6="" alt="" src="assets/images/book_icon2.png"></a></div>
+
+
+</div>
+
+     <!---- <div class="row blog-body-icons">
+        
+         
+       <div class="icons-res">
+
+          <span class="icon-3" (click)="
+          blog?.like?.likeStatus=='0' || blog?.like?.likeStatus=='1' 
+            ? updateBlogLike(blog)
+            : saveBlogLike(blog)
+        ">-->
+            <!-- <img src="assets/images/blog-heart.svg" style="width: 90%;"> -->
+           <!-- <i class="fa col-red heart-shape"
+              [ngClass]="{'fa-heart-o' : !blog?.like || blog?.like?.likeStatus=='0',  'fa-heart' : blog?.like?.likeStatus=='1'  }"></i>
+          </span>
+
+          <div class="icon-txt">
+            <span style="float: left;text-align: center;width: 100%;">{{blog?.likeCount?.length || '0'}}</span><br>
+            <span class="info-icon" style="float: left;border-top: 1px solid;">Likes</span>
+          </div>
+
+        </div>-->
+
+      <!---  <div id="myBtn" class="icons-res">
+
+
+          <span class="icon-3" (click)="openShareModal(socialMedia,blog?._id)">
+            <img src="assets/images/blogp-share.svg" style="width: 74%;">
+          </span>
+
+          <div class="icon-txt">
+            <span style="float: left;text-align: center;width: 100%;">{{blog?.shareCount?.length || '0'}}</span><br>
+            <span class="info-icon" style="float: left;border-top: 1px solid;">Shares</span>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-body">
+                <span class="close">×</span>
+                <div class="icon5" style="margin-bottom: 32px;">
+                  <h6 style="text-align: left;font-size: 11px;font-weight: 500;color: #777575;">Share On social media1
+                  </h6>
+                  <a href="#"><i class="fa  fa-facebook circle5 "></i></a>
+                  <a href="#"><i class="fa  fa-instagram circle5"></i></a>
+                  <a href="#"><i class="fa  fa-linkedin circle5 "></i></a>
+                  <a href="#"><i class="fa  fa-google-plus circle5"></i></a>
+                  <a href="#"><i class="fa  fa-youtube circle5 "></i></a>
+                  <a href="#"><i class="fa  fa-twitter circle5" style="margin-top: -6px;"></i></a>
+                </div>
+
+                <div style="width: 100%; float: left;">
+                  <h6 style="text-align: left;font-size: 11px;font-weight: 500;color: #777575;">Copy Link</h6>
+                  <input type="text" [(ngModel)]="copiedLink" id="myInput"
+                    style="width: 80%;float: left;background: #effdfe;border: none;border-radius: 18px;">
+                  <button (click)="myFunction()"
+                    style="width: 20%;float: left;background: #effdfe;border: none;border-radius: 18px;box-shadow: none;border: none;"><img
+                      src="assets/images/link.png"></button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>-->
+    </div>
+
+    <div class="col-md-6 right">
+      <div class="editor_name">
+<p>by <span>Swati Rajgarhia</span><i>, Editor</i></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<div class="container-fluid center" *ngIf="(recentBlog | json)  != ({} | json)">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <img src="{{url}}/images/{{recentBlog['media690']}}" *ngIf="recentBlog && recentBlog['media']" class="hunt-img">
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 center">
+      <div class="row">
+        <div class="col-lg-2">
+          <span class="date" *ngIf="recentBlog && recentBlog['content']">
+            {{recentBlog['createdAt'] | date: 'MMM dd, yyyy'}} </span>
+        </div>
+        <div class="col-lg-10">
+          <h3 class="blog-title" *ngIf="recentBlog && recentBlog['title']">{{recentBlog['title']}}</h3>
+        </div>
+      </div>
+
+
+      <div class="text-style">
+
+        <p [innerHTML]="recentBlog['content']" *ngIf="recentBlog && recentBlog['content']">
+
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="row blog-body-icons">
+            <div class="icons-res">
+
+              <span class="icon-3">
+                <img src="/assets/images/blog-book.svg">
+              </span>
+
+
+              <div class="icon-txt">
+                <span
+                  style="float: left;text-align: center;width: 25%;">{{recentBlog.readCount.length || '0'}}</span><br>
+                <span class="info-icon" style="float: left;border-top: 1px solid;">Reads</span>
+              </div>
+            </div>
+
+          <div class="icons-res">
+              <span class="icon-3" (click)="
+              recentBlog?.like?.likeStatus=='0' || recentBlog?.like?.likeStatus=='1' 
+                  ? updateBlogLike(recentBlog)
+                  : saveBlogLike(recentBlog)
+              ">
+                <i class="fa col-red heart-shape"
+                  [ngClass]="{'fa-heart-o' : !recentBlog?.like || recentBlog?.like?.likeStatus=='0',  'fa-heart' : recentBlog?.like?.likeStatus=='1'  }"></i>
+              </span>
+
+              <div class="icon-txt">
+                <span
+                  style="float: left;text-align: center;width: 100%;">{{recentBlog?.likeCount?.length || '0'}}</span><br>
+                <span class="info-icon" style="float: left;border-top: 1px solid;">Likes</span>
+              </div>
+
+
+            </div>
+
+            <div id="myBtn" class="icons-res">
+              <span class="icon-3">
+                <img src="/assets/images/blogp-share.svg" style="width: 74%;">
+              </span>
+
+              <div class="icon-txt">
+                <span
+                  style="float: left;text-align: center;width: 100%;">{{recentBlog.shareCount.length || '0'}}</span><br>
+                <span class="info-icon" style="float: left;border-top: 1px solid;">Shares</span>
+
+               
+              </div>
+
+
+
+
+            </div>
+       
+          </div>
+        </div>
+
+        <div class="col-md-6"></div>
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+</div>
+
+<ng-template #socialMedia>
+  <div class="modal-body">
+    <span class="close">×</span>
+    <div class="icon5" style="margin-bottom: 32px;">
+      <h6 style="text-align: left;font-size: 11px;font-weight: 600;color: #777575;">Share On social media3</h6>
+      <a (click)="blogShareLink('facebook')"><i class="fa  fa-facebook circle5 "></i></a>
+      <a (click)="blogShareLink('instagram')"><i class="fa  fa-instagram circle5"></i></a>
+      <a (click)="blogShareLink('linkedin')"><i class="fa  fa-linkedin circle5 "></i></a>
+      <a (click)="blogShareLink('google+')"><i class="fa  fa-google-plus circle5"></i></a>
+      <a (click)="blogShareLink('youtube')"><i class="fa  fa-youtube circle5 "></i></a>
+      <a (click)="blogShareLink('twitter')"><i class="fa  fa-twitter circle5" style="margin-top: -6px;"></i></a>
+    </div>
+
+    <div style="width: 100%; float: left;">
+      <h6 style="text-align: left;font-size: 11px;font-weight: 600;color: #777575;">Copy Link</h6>
+      <input type="text" [(ngModel)]="copiedLink" id="myInput"
+        style="width: 80%;float: left;background: #effdfe;border: none;border-radius: 18px;">
+      <button (click)="blogShareLink('site')"
+        style="width: 20%;float: left;background: #effdfe;border: none;border-radius: 18px;box-shadow: none;border: none;"><img
+          src="/assets/images/link.png"></button>
+    </div>
+
+  </div>
+</ng-template>

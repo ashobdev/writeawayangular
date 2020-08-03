@@ -1,0 +1,4032 @@
+.header {
+  /* height: 80px; */
+}
+
+.login-modal {
+  padding-bottom: 20px;
+}
+button.myname_setting {
+  margin-left: 30PX;}
+
+.right-header img {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.forget-pass-login-modal {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.header .logo {
+  position: absolute;
+  top: 0;
+  width: 260px;
+}
+
+.right {
+  text-align: right;
+}
+ul#dropdown-basic {
+  left: -120px!important;
+}
+
+.select-dates {
+  padding-top: 10px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+h6.forgot-heading_views{
+  padding: 0px 0 40px 0;
+  font-weight: 500;
+  color: #000;
+}
+label.input-names.italic.file_forgot_pwd {
+  font-size: 17px;
+  color: #9c9b9b;
+  padding: 0px 0 30px 0;
+}
+button.forget-cancl.bnt_chnage.bg_sign_two {
+  background-color: #3b9bf1;
+  color: #fff;
+  border-color: #3b9bf1;
+  font-weight: 500;
+}
+.tow_bnt_view-forgot {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.select-dates select {
+  cursor: pointer;
+}
+
+.not-reg-modal {
+  margin-right: 10px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.header .logo a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+}
+
+.btn_area {
+  float: right;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0px 0px;
+  
+}
+
+.btn_area .search_btn i {
+  color: #1ca9c9;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn_area .btn_img {
+  width: 110px;
+  margin-left: 25px;
+  text-align:center;
+}
+input.input-fields.set_divice {
+  padding: 16px 0 10px 0px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 470px) {
+  .updated-responsivess {
+    width: 82px !important;
+    margin-left: 11px !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 321px) {
+  .updated-responsivess {
+    width: 64px !important;
+    margin-left: -8px !important;
+    margin-top: 8px;
+    position: relative;
+    left: 11px;
+  }
+}
+
+.align {
+  position: relative;
+  top: -13px;
+  z-index: -1;
+}
+
+.col_form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+button.my-close {
+  opacity: 2.1;
+  
+}
+/* nice dropdown */
+.nice-select {
+  height: 30px;
+  border-radius: 50px;
+  color: #1ca9c9;
+  font-size: 13px;
+  font-weight: 600;
+  border-color: #e051b7;
+}
+
+.nice-select {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 27px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: auto;
+  margin-bottom: 16px;
+}
+
+.nice-select .list {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+  box-sizing: border-box;
+  margin-top: 4px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+  -ms-transform: scale(0.75) translateY(-21px);
+  transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  z-index: 9;
+}
+
+.nice-select::after {
+  border-bottom: 2px solid #1ca9c9;
+  border-right: 2px solid #1ca9c9;
+}
+
+.nice-select:after {
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+  content: "";
+  display: block;
+  height: 8px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 8px;
+}
+
+/* NEW CSS _ C */
+.pad-zero {
+  padding: 0% !important;
+}
+
+.terms-fix-pad {
+  padding-left: 130px;
+}
+
+.right-header select {
+  width: 55%;
+  border: 1px solid #d43299;
+  border-radius: 6px;
+  font-size: 11px;
+  padding: 5px;
+}
+
+.search-icon {
+  color: #3494c0;
+  margin-right: 5%;
+}
+
+/* Login */
+.create-acc-head {
+  background-color: #effdff;
+  color: #309fd8;
+  padding: 22px;
+}
+
+.back-image {
+  /* background-image: url(/assets/images/main-banner45.svg); */
+  height: 87%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.modal-check {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+
+.remeber-section {
+  margin-top: 16px;
+}
+.padd-in_box {
+  /* float: left; */
+  width: 100%;
+  margin: 0px;
+  padding: 15px 0 0 0;
+}
+.form-details{
+  margin-top: 20px;
+  padding: 0px 20px 20px 20px;
+  border-radius: 0PX;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  box-shadow: 3px 3px 4px 0px #eae7e7ab;
+}
+
+.select_guarti {
+  width: 30%!important;
+}
+.input-names{
+  font-size: 19px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0px !important;
+  margin-top: 9px;
+}
+
+.headings-input-fields{
+  padding-top: 15px;
+  font-size: 19px;
+  font-weight: 500;
+}
+.not-reg-modal{
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #309fd8;
+}
+.create-acc-head{
+  background-color: #effdff;
+  color: #309fd8;
+  padding: 17px 20px 10px 20px;
+}
+.left span img {
+  width: 26px;
+}
+
+
+.input-fields {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #e72692;
+  color: lightgray;
+  width: 100%;
+  color: black;
+  padding-left: 5px;
+  background-color: transparent;
+  padding: 0 0px 10px 0;
+}
+.log-details {
+  padding-top: 16px;
+}
+
+.radio-btns {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  top: 3px;
+}
+
+/* .footer-updates chekbox{} */
+.check-btms {
+  position: relative;
+  left: 39px;
+  top: 18pcx;
+  top: 6px;
+}
+
+.col-yel {
+  color: #ffb300;
+}
+
+/* .radio-btns :checked{
+ color: red;
+ background-color: red;
+
+} */
+.right-alig {
+  text-align: right !important;
+}
+
+.left-alig {
+  text-align: left !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.footer-updates span {
+  font-weight: 800;
+  font-size: 11px;
+}
+
+.input-fields:focus {
+  background-color: white;
+}
+
+.headings-input-fields {
+  padding-top: 15px;
+  padding: 25px 0 10px 0;
+}
+.btn-signup {
+  color: white;
+  border: none;
+  background-color: #309fd8;
+  font-weight: 700;
+  padding: 7px 29px 7px 29px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+a.forget-password {
+  text-decoration: none;
+  background-color: transparent;
+  color: #309fd8;
+}
+.pading-set {
+  padding: 20px 0 20px 0!important;
+  float: left;
+}
+.date-picker {
+  text-align: center;
+  background-color: white !important;
+  padding-bottom: 8px;
+  box-shadow: 1px 5px 6px -6px #ccc;
+  padding-top: 17px;
+  padding-bottom: 23px;
+  margin-top: 0px;
+  padding: 65px 0 65px 0;
+  border: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  border-top: none;
+}
+.display {
+  display: inline-flex;
+}
+
+.birthdate{
+  display: inline-block;
+  width: 60%;
+  border: none;
+  border-bottom: 1px solid #e72692;
+  color: #00000082;
+  cursor: pointer;
+  padding: 0 0 7px 0;
+}
+
+/* Registration */
+/* Modal */
+::ng-deep .modal-dialog {
+  float: right;
+  margin-right: 273px;
+  
+}
+
+/* Modal */
+.btn-signup{
+  color: white;
+  border: none;
+  background-color: #3B9BF1;
+  font-weight: 700;
+  padding: 7px 39px 7px 39px;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.not-reg-modal{
+  margin-right: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+h6.headings-input-fields.forget-pass-login-modal.change_font {
+  cursor: pointer;
+}
+.headings-input-fields.change_font {
+  padding-top: 15px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #2094fb;
+}
+
+.worng_msg {
+  font-weight: 500;
+  font-size: 15px;
+  font-style: italic;
+}
+button.btn-signup.new_signup{
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 17px;
+  padding: 6px 38px 6px 38px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 4px;
+  
+}
+
+button.forget-cancl.bnt_chnage{
+  background-color: #fff;
+  font-weight: normal;
+  border-color: #ada8a8;
+  margin: 17px 10px 0 0px;
+  padding: 8px 39px 8px 39px;
+  border-radius: 5px;
+ font-weight: 500;
+}
+.italic {
+  font-style: italic;
+}
+.right-header img {}
+
+.logo img:focus {
+  outline: none;
+}
+
+/* }
+forget-pass */
+
+.forget-cancl {
+  margin-top: 10px;
+  border: 1px solid;
+  padding: 6px 20px 5px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.forget-popup {
+  padding-bottom: 15px;
+}
+
+.forget-heght {
+  
+  padding-top: 0px;
+}
+.login-modalss {
+  position: absolute !important;
+  right: 0px !important;
+  background-color: white !important;
+  float: right !important;
+}
+
+::ng-deep .modelWidth {
+  margin-top: 139px;
+  margin-right: 230px;
+}
+
+/* @media only screen and (min-width:360px) and (max-width:520px) {
+  ::ng-deep .modelWidth {
+    position: fixed;
+    background-color: white;
+    left: 23px;
+    right: 24px;
+  } */
+@media only screen and (min-width: 360px) and (max-width: 560px) {
+  .fff {
+    position: fixed;
+   left: 45px;
+    right: 43px;
+    top: 48px;
+  
+  }
+
+  
+  .modal-dialog {
+    opacity: 1 !important;
+  }
+}
+
+
+@media only screen and (min-width: 1440px) and (max-width: 1441px) {
+  ::ng-deep .modelWidth {
+    margin-top: 144px;
+    width: 31% !important;
+    margin-right: 264px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 769px) {
+  ::ng-deep .modelWidth {
+    margin-top: 389px;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 769px) {
+    ::ng-deep .modelWidth {
+      position: fixed;
+      background-color: white;
+      left: 23px;
+    }
+  }
+
+  ::ng-deep .modal-content {
+    width: 139% !important;
+    position: relative;
+    margin-top: -200px;
+  }
+}
+
+::ng-deep .modal-content {
+  width: 140%;
+  
+}
+
+.sign-up-pop-col{
+  color: #e051b7;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 22px;
+}
+button.my-close img {
+  width: 24px;
+  padding: 3px 0px 0px 0px;
+}
+
+.closepop-btn{
+  padding: 3px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: -13px;
+  margin-bottom: -2px;
+  position: relative;
+  left: -33px;
+  top: 2px;
+}
+
+
+
+.sign-updateds {
+  position: relative;
+  left: -26px;
+}
+
+.mod {
+  font-size: 16px!important;
+  padding: 0px 0px 20px 0px!important;
+  margin-bottom: 0px!important;
+  float: left;
+  width: 100%;
+}
+
+.birth-updated {
+  position: relative;
+  left: -12px;
+}
+
+.remmm {
+  font-size: 15px;
+  color: #333333;
+ 
+}
+
+.left {
+  float: left;
+}
+
+.update-birthdate {
+  width: 69%;
+}
+
+.caret-icons {
+  position: relative;
+  right: 8px;
+  color: lightgray;
+}
+
+.right {
+  text-align: right !important;
+  color: #309fd8 !important;
+}
+
+.box {
+  position: relative;
+  width: 220px;
+}
+
+.search {
+  width: 200px;
+  padding: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  float: left;
+  display: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background: red;
+  position: absolute;
+  right: 0;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  background-color: white !important;
+  color: #1ca9c9;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  transition: width 0.4s ease-in-out;
+  cursor: pointer;
+  padding: 0 0 10px 0;
+}
+
+
+
+img,
+input {
+  max-width: 100% !important;
+  display: block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .right-header {
+    text-align: center !important;
+    padding-bottom: 15px;
+  }
+
+  .col_form_area {
+    padding-top: unset;
+  }
+}
+
+.header-age-selecter {
+  height: 30px;
+  border-radius: 50px;
+  color: #1ca9c9;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #ea7ac1;
+  padding: 0 10px;
+  font-family: "montserratregular" !important;
+}
+
+.chk-fix-22 {
+  left: 67px;
+}
+
+.invalid-feedback.errors-chk-fix {
+  width: 280px;
+}
+
+@media only screen and (max-width: 1024px) {
+  ::ng-deep .modelWidth {
+    margin-right: 1px;
+    margin-top: 1px;
+  }
+
+  ::ng-deep .modal-content {
+    width: 100% !important;
+    margin-top: 90px !important;
+    min-height: inherit !important;
+  }
+
+  ::ng-deep .modal-dialog {
+    width: 55.5% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-body {
+    padding: 0px !important;
+  }
+
+  ::ng-deep .closepop-btn {
+    left: -18px !important;
+    top: 10px !important;
+    font-size: 18px;
+  }
+
+  ::ng-deep .sign-updateds {
+    left: -5px !important;
+    
+  }
+
+  ::ng-deep .create-acc-head {
+    padding: 6px 7px !important;
+  }
+
+  ::ng-deep .form-details {
+    margin-top: 0px !important;
+  }
+
+  ::ng-deep .headings-input-fields {
+    padding-top: 6px !important;
+  }
+
+  ::ng-deep .input-names {
+    margin-top: 5px !important;
+  }
+
+  ::ng-deep .forget-popup {
+    padding-bottom: 25px !important;
+  }
+
+  ::ng-deep .date-picker {
+    padding-bottom: 80px !important;
+    margin-top: 80px !important;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  ::ng-deep .modelWidth {
+    margin-right: 1px;
+    margin-top: 1px;
+  }
+
+  ::ng-deep .modal-content {
+    width: 100% !important;
+    margin-top: 0px !important;
+    min-height: inherit !important;
+  }
+
+  ::ng-deep .modal-dialog {
+    width: 94.5% !important;
+    max-width: inherit;
+    margin-top: 452px;
+  }
+
+  ::ng-deep .create-acc-head {
+    padding: 20px 7px !important;
+  }
+
+  ::ng-deep .back-image {
+    padding: 0px 0;
+  }
+
+  ::ng-deep .form-details{
+    padding: 30px 20px;
+  }
+
+  ::ng-deep .input-names {
+    margin-top: 15px !important;
+  }
+
+  ::ng-deep .headings-input-fields {
+    padding-top: 35px !important;
+  }
+
+  ::ng-deep .modal-body {
+    padding: 0px !important;
+  }
+
+  ::ng-deep .closepop-btn {
+    left: -18px !important;
+    top: 10px !important;
+    font-size: 18px;
+  }
+
+  ::ng-deep .sign-updateds {
+    left: -5px !important;
+  }
+
+  ::ng-deep .create-acc-head {
+    padding: 12px 12px !important;
+  }
+
+  ::ng-deep .form-details {
+    margin-top: 5px !important;
+  }
+
+  ::ng-deep .headings-input-fields {
+    padding-top: 0px !important;
+  }
+
+  ::ng-deep .input-names {
+    margin-top: 10px !important;
+  }
+
+  ::ng-deep .forget-popup {
+    padding-bottom: 65px !important;
+  }
+
+  ::ng-deep .date-picker {
+    padding-bottom: 165px !important;
+    margin-top: 85px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  ::ng-deep .modal-open {
+    overflow: inherit;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-right: 1px;
+    margin-top: 1px;
+  }
+
+  ::ng-deep .modal-content {
+    width: 100% !important;
+    margin-top: 40px !important;
+    min-height: inherit !important;
+  }
+
+  ::ng-deep .fff {
+    left: 0px !important;
+    right: 0px !important;
+    top: 0px !important;
+    margin-top: 0px;
+    position: inherit !important;
+  }
+
+  ::ng-deep .modal-dialog {
+    width: 98% !important;
+    max-width: inherit;
+    margin-top: 0px;
+    margin: 0 1%;
+  }
+
+  ::ng-deep .modal-body {
+    padding: 0px !important;
+  }
+
+  ::ng-deep .closepop-btn {
+    left: -18px !important;
+    top: 10px !important;
+    font-size: 18px;
+  }
+
+  ::ng-deep .sign-updateds {
+    left: -5px !important;
+  }
+
+  ::ng-deep .create-acc-head {
+    padding: 5px 5px !important;
+  }
+
+  ::ng-deep .form-details {
+    margin-top: 20px !important;
+  }
+
+  ::ng-deep .headings-input-fields {
+    padding-top: 20px !important;
+  }
+
+  ::ng-deep .input-names {
+    margin-top: 0px !important;
+  }
+
+  ::ng-deep .forget-popup {
+    padding-bottom: 65px !important;
+  }
+
+  ::ng-deep .date-picker {
+    padding-bottom: 165px !important;
+    margin-top: 85px !important;
+  }
+}
+
+.dropdown-toggle {
+  background: transparent !important;
+  color: #3b9bf1 !important;
+}
+
+.dropdown-menu.show,
+.dropdown-item {
+  background: #ecfdff !important;
+  color: #3b9bf1 !important;
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1277px) and (max-width: 1343px) {
+  ::ng-deep .modal-content {
+    width: 135% !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 130px !important;
+    margin-right: 175px !important;
+  }
+}
+
+@media only screen and (min-width: 1225px) and (max-width: 1277px) {
+  ::ng-deep .modal-content {
+    width: 130% !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 120px !important;
+    margin-right: 150px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1225px) {
+  ::ng-deep .modal-content {
+    width: 125% !important;
+    
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 115px !important;
+    margin-right: 130px !important;
+  }
+
+  .form-details {
+    margin-top: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1200px) {
+  ::ng-deep .modal-content {
+    width: 120% !important;
+    min-height: 355px !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 115px !important;
+    margin-right: 101px !important;
+  }
+
+  .form-details {
+    margin-top: 0px !important;
+  }
+
+  .login-modal {
+    padding-bottom: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1150px) {
+  ::ng-deep .modal-content {
+    width: 120% !important;
+    min-height: 355px !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 115px !important;
+    margin-right: 101px !important;
+  }
+
+  .form-details {
+    margin-top: 0px !important;
+  }
+
+  .login-modal {
+    padding-bottom: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1100px) {
+  ::ng-deep .modal-content {
+    width: 115% !important;
+    min-height: 75px !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 104px !important;
+    margin-right: 77px !important;
+  }
+
+  .form-details {
+    margin-top: 0px !important;
+  }
+
+  .login-modal {
+    padding-bottom: 0px !important;
+  }
+
+  .modal-body {
+    padding: 5px !important;
+  }
+
+  .sign-updateds {
+    left: -9px !important;
+  }
+
+  .closepop-btn {
+    left: -21px !important;
+    top: 8px !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1050px) {
+  ::ng-deep .modal-content {
+    width: 115% !important;
+    min-height: 75px !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 104px !important;
+    margin-right: 77px !important;
+  }
+
+  .form-details {
+    margin-top: 0px !important;
+  }
+
+  .login-modal {
+    padding-bottom: 0px !important;
+  }
+
+  .modal-body {
+    padding: 5px !important;
+  }
+
+  .sign-updateds {
+    left: -9px !important;
+  }
+
+  .closepop-btn {
+    left: -21px !important;
+    top: 8px !important;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 992px) {
+
+  ::ng-deep .modal-dialog {
+    width: 100% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-content {
+    width: 98% !important;
+    margin: 0 1%;
+    padding: 25px 25px 53px 25px;
+  }
+
+  ::ng-deep .create-acc-head {
+    padding: 20px 7px !important;
+  }
+
+  ::ng-deep .back-image {
+    padding: 30px 0;
+  }
+
+  ::ng-deep .form-details{
+    padding: 30px 20px;
+  }
+
+  ::ng-deep .input-names {
+    margin-top: 15px !important;
+  }
+
+  ::ng-deep .headings-input-fields {
+    padding-top: 45px !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 396px !important;
+    margin-right: 0px !important;
+  } 
+
+  ::ng-deep .date-picker {
+    padding-bottom: 223px !important;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 950px) {
+
+  ::ng-deep .modal-dialog {
+    width: 100% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-content {
+    width: 98% !important;
+    margin: 0 1%;
+    padding: 25px 25px 53px 25px;
+  }
+
+  ::ng-deep .create-acc-head {
+    padding: 20px 7px !important;
+  }
+
+  ::ng-deep .back-image {
+    padding: 30px 0;
+  }
+
+  ::ng-deep .form-details{
+    padding: 30px 20px;
+  }
+
+  ::ng-deep .input-names {
+    margin-top: 15px !important;
+  }
+
+  ::ng-deep .headings-input-fields {
+    padding-top: 45px !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 385px !important;
+    margin-right: 0px !important;
+  } 
+
+  ::ng-deep .date-picker {
+    padding-bottom: 223px !important;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+
+  ::ng-deep .modal-dialog {
+    width: 100% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-content {
+    width: 98% !important;
+    margin: 0 1%;
+    padding: 25px 25px 25px 25px;
+  }
+
+
+  ::ng-deep .create-acc-head {
+    padding: 20px 7px !important;
+  }
+
+  ::ng-deep .back-image {
+    padding: 30px 0;
+  }
+
+  ::ng-deep .form-details{
+    padding: 30px 20px;
+  }
+
+  ::ng-deep .input-names {
+    margin-top: 15px !important;
+  }
+
+  ::ng-deep .headings-input-fields {
+    padding-top: 35px !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 366px !important;
+    margin-right: 0px !important;
+  } 
+
+  ::ng-deep .date-picker {
+    padding-bottom: 200px !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+
+  ::ng-deep .modal-dialog {
+    width: 100% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-content {
+    width: 98% !important;
+    margin: 0 1%;
+    padding: 25px 25px 25px 25px;
+  }
+
+  ::ng-deep .create-acc-head {
+    padding: 20px 7px !important;
+  }
+
+  ::ng-deep .back-image {
+    padding: 30px 0;
+  }
+
+  ::ng-deep .form-details{
+    padding: 30px 20px;
+  }
+
+  ::ng-deep .input-names {
+    margin-top: 15px !important;
+  }
+
+  ::ng-deep .headings-input-fields {
+    padding-top: 10px !important;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 358px !important;
+    margin-right: 0px !important;
+  }
+  
+  ::ng-deep .date-picker {
+    padding-bottom: 140px !important;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 767px) {
+
+  ::ng-deep .modal-dialog {
+    width: 100% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-content {
+    width: 98% !important;
+    margin: 0 1%;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 100px !important;
+    margin-right: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 650px) {
+
+  ::ng-deep .modal-dialog {
+    width: 100% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-content {
+    width: 98% !important;
+    margin: 0 1%;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 100px !important;
+    margin-right: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 600px) {
+
+  ::ng-deep .modal-dialog {
+    width: 100% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-content {
+    width: 98% !important;
+    margin: 0 1%;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 100px !important;
+    margin-right: 0px !important;
+  }
+
+  ::ng-deep .fff {
+    left: 10px !important;
+    right: 10px !important;
+    top: 140 !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+  ::ng-deep .modal-dialog {
+    width: 100% !important;
+    max-width: inherit;
+  }
+
+  ::ng-deep .modal-content {
+    width: 98% !important;
+    margin: 0 1%;
+  }
+
+  ::ng-deep .modelWidth {
+    margin-top: 40px !important;
+    margin-right: 0px !important;
+  }
+
+  ::ng-deep .fff {
+    left: 0px !important;
+    right: 0px !important;
+    top: 140 !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1100px) {
+  .date-picker {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .sign-updateds {
+    left: -25px;
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (max-width: 1100px) {
+  .date-picker {
+    margin-bottom: 75px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .date-picker {
+    margin-bottom: 75px;
+  }
+}
+.main_form {
+  width: 100%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 400px) {
+.fff {
+  position: fixed;
+  background-image: url('../../../assets/images/popup-bg.jpg');
+    left: 45px;
+    right: 43px;
+    top: 48px;
+    background-size: contain;
+    background-position: 0px 60px;
+}
+.headings-input-fields {
+  padding: 10px 0 10px 0!important;
+}
+
+.date-picker{
+  background-color: #ffffffa6 !important;  
+}
+.date-picker {
+  padding-bottom: 10px !important;
+  margin: 30px 0 30px 0!important;
+  width: 100%!important;
+}
+.modal-content {
+  margin-top: 30px !important;
+  
+}
+.logo.set_view a img {
+  padding: 9px 0 0 0;
+}.birth-updated{
+  position: relative;
+  left: 0px;
+  font-size: 14px;
+}
+.updated-signupmod {
+  position: relative;
+  left: 0px;
+}
+.terms-fix-pad {
+  padding-left: 0px;
+}
+.chk-fix-22 {
+  left: 15px;
+  top: 6px;
+}
+
+.noti_info{font-size: 11px;
+  color: #f94242;
+  padding-left: 36px; }
+ 
+  .sign-updateds {
+    position: relative;
+    left: -26px;
+    font-size: 14px;
+}
+.remmm {
+  font-size: 11px;
+
+}
+.modal-content {
+  border: none!important;
+}
+.btn_area .btn_img{
+  width: 100px;
+  margin-left: 0px;
+  padding: 4px 0 0 0;
+}
+h4.sign-updateds {
+  text-align: center;
+}.right {
+  text-align: center!important;
+  
+}
+img.close_bnt {
+  width: 28px;
+}
+.full_details h1 {
+  font-size: 16px!important;
+}.full_details p {
+  font-size: 12px;
+}
+span.date_post p {
+  font-size: 11px!important;
+}.full_details h1 {
+  font-size: 16px!important;
+}
+.input-names {
+  font-size: 14px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+.left-alig span {
+  font-size: 9px!important;
+}
+
+.chk-fix-22 {
+  left: 35px!important;
+  top: 6px;
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+}
+
+.forget-heght{
+  height: 239px;
+  padding: 20px 20px 20px 20px;
+}
+button.myname_setting {
+margin-left: -42px;
+  font-size: 12px;
+}
+button.myname_setting {
+  margin-left: -14px;
+}
+ul#dropdown-basic {
+  left: -120px!important;
+}
+/***Blog Details-css-***/
+.btn_area {
+  
+  padding: 0 0px 0px 0px;
+  
+}
+ul#dropdown-basic{
+  left: -138px!important;
+}
+button.myname_setting{
+  margin-left: -16px!important;
+}
+.btn-signup {
+ padding: 7px 7px 7px 7px;
+  font-size: 14px;}
+  .remmm{
+    font-size: 8px;
+}
+.headings-input-fields.change_font {
+ font-size: 9px;
+}
+  
+}
+
+
+@media only screen and (min-device-width : 401px) and (max-device-width : 480px) {
+  .fff {
+    position: fixed;
+    background-image: url(../../../assets/images/popup-bg.jpg);
+    left: 45px;
+    right: 43px;
+    top: 48px;
+    background-size: contain;
+    background-position: 0px 60px;
+  }
+  .headings-input-fields {
+    padding: 10px 0 10px 0!important;
+  }
+  .date-picker{
+    background-color: #ffffffa6 !important;  
+  }
+  .date-picker {
+    padding-bottom: 165px !important;
+    margin: 30px 0 30px 0!important;
+  }
+  .modal-content {
+    margin-top: 50px !important;
+    
+  }
+  .logo.set_view a img {
+    padding: 9px 0 0 0;
+  }.birth-updated{
+    position: relative;
+    left: 0px;
+    font-size: 14px;
+  }
+  .updated-signupmod {
+    position: relative;
+    left: 0px;
+  }
+  .terms-fix-pad {
+    padding-left: 0px;
+  }
+  .chk-fix-22 {
+    left: 15px;
+    top: 6px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }.modal-content {
+    border: none!important;
+}
+.date-picker{
+  padding-bottom: 0px !important;
+  margin: 40px 0 40px 0!important;
+}
+h4.sign-updateds {
+  text-align: center;
+}
+.right{
+  text-align: center!important;
+  
+}
+.input-names {
+  font-size: 14px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+.left-alig span {
+  font-size: 10px!important;
+}
+
+.chk-fix-22{
+  left: 50px!important;
+  top: 7px;
+}
+i.fa.fa-caret-down.big{
+ left: 14px!important;
+}
+.footer-updates span {
+  font-weight: 800;
+  font-size: 10px;
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+}
+
+.forget-heght{
+  height: 239px;
+  padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+
+button.myname_setting {
+  margin-left: -42px;
+    font-size: 12px;
+  }
+  button.myname_setting {
+    margin-left: -14px;
+  }
+  ul#dropdown-basic {
+    left: -120px!important;
+  }
+  .right-header.btn_img.updated-responsivess img {
+    padding: 5px 0 0 0;
+}
+.btn_area {
+  
+  padding: 0 0px 0px 0px;
+  
+}
+ul#dropdown-basic{
+  left: -138px!important;
+}
+button.myname_setting{
+  margin-left: -16px!important;
+}
+.btn-signup {
+  padding: 7px 7px 7px 7px;
+   font-size: 14px;}
+   .remmm{
+     font-size: 9px;
+ }
+ .headings-input-fields.change_font {
+  font-size: 10px;
+ }
+
+}
+
+  @media only screen and (min-device-width : 481px) and (max-device-width : 520px) {
+    .fff {
+      position: fixed;
+      background-image: url(../../../assets/images/popup-bg.jpg);
+      left: 45px;
+      right: 43px;
+      top: 48px;
+      background-size: contain;
+      background-position: 0px 60px;
+      width: 80%;
+    margin: 0 auto;
+    }
+    .headings-input-fields {
+      padding: 10px 0 10px 0!important;
+    }
+    .input-names {
+      margin-top: 0px !important;
+  }
+  .date-picker{
+    background-color: #ffffffa6 !important;  
+  }.date-picker {
+    padding-bottom: 0px !important;
+    margin: 40px 0 40px 0!important;
+  }
+  .modal-content {
+    margin-top: 60px !important;
+    
+  }
+  .logo.set_view a img {
+    padding: 9px 0 0 0;
+  }.birth-updated{
+    position: relative;
+    left: 0px;
+    font-size: 14px;
+  }
+  .updated-signupmod {
+    position: relative;
+    left: 0px;
+  }
+  .terms-fix-pad {
+    padding-left: 0px;
+  }
+  .chk-fix-22 {
+    left: 15px;
+    top: 6px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }
+  .btn_area{
+   padding-top: 15px;
+    
+}.modal-content {
+  border: none!important;
+}.btn_area .btn_img{
+ margin-left: 47px;
+ margin-right: 10px;
+}
+  .input-names {
+    font-size: 14px;}
+  
+    .invalid-feedback {  
+   font-weight: 600!important;
+  }
+
+  .left-alig span {
+    font-size: 10px!important;
+  }
+  
+  .chk-fix-22 {
+    left: 51px!important;
+    top: 8px;
+
+  }
+  .center_point {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  button.forget-cancl.bnt_chnage {
+    background-color: #fff;
+      font-weight: normal;
+      border-color: #ada8a8;
+      margin: 0 10px 0 0px;
+      padding: 6px 30px 6px 30px;
+      border-radius: 7px;
+  
+  }
+  
+  
+  button.btn-signup.new_signup {
+    background-color: #3b9bf1;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 6px 30px 6px 30px;
+    border: solid;
+    border-width: 1px;
+    border-color: #3b9bf1;
+    border-radius: 7px;
+  }
+  
+  .forget-popup {
+    padding-bottom: 20px !important;
+  }
+  
+  .forget-heght{
+    height: auto!important;
+   padding: 20px 20px 20px 20px;
+  }.modal-content {
+    width: 80% !important;
+    margin: 0px auto;
+}
+button.myname_setting {
+  margin-left: -42px;
+    font-size: 14px;
+  }
+  button.myname_setting {
+    margin-left: -20px;
+  }
+  ul#dropdown-basic {
+    left: -120px!important;
+  }
+  .right-header.btn_img.updated-responsivess img {
+    padding: 5px 0 0 0;
+}
+
+.btn_area {
+  
+  padding: 0 0px 0px 0px;
+  
+}
+ul#dropdown-basic{
+  left: -138px!important;
+}
+button.myname_setting{
+  margin-left: -16px!important;
+}
+.right-header img {
+ margin-left: 66px!important;
+}
+.btn_area .btn_img {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.right-header img {
+  margin-left: 17px!important;
+}
+.btn-signup {
+  padding: 7px 7px 7px 7px;
+   font-size: 14px;}
+   .remmm{
+     font-size: 9px;
+ }
+ .headings-input-fields.change_font {
+  font-size: 10px;
+ }
+ .footer-updates span{
+font-size: 10px;
+}
+
+
+    }
+
+    @media only screen and (min-device-width : 521px) and (max-device-width : 640px) {
+      .fff {
+        position: fixed;
+        background-image: url(../../../assets/images/popup-bg.jpg);
+        left: 45px;
+        right: 43px;
+        top: 48px;
+        background-size: contain;
+        background-position: 0px 60px;
+        width: 80%;
+      margin: 0 auto;
+      }
+      .headings-input-fields {
+        padding: 10px 0 10px 0!important;
+      }
+      .input-names {
+        margin-top: 0px !important;
+    }
+      
+    .date-picker{
+      background-color: #ffffffa6 !important;  
+    }
+    .date-picker {
+      padding-bottom: 0px !important;
+      margin: 40px 0 40px 0!important;
+    }
+    .logo.set_view a img {
+      padding: 9px 0 0 0;
+    }.birth-updated{
+      position: relative;
+      left: 0px;
+      font-size: 14px;
+    }
+    .updated-signupmod {
+      position: relative;
+      left: 0px;
+    }
+    .terms-fix-pad {
+      padding-left: 0px;
+    }
+    .chk-fix-22 {
+      left: 15px;
+      top: 6px;
+    }
+    
+    .noti_info{font-size: 11px;
+      color: #f94242;
+      padding-left: 36px; }
+     
+      .sign-updateds {
+        position: relative;
+        left: -26px;
+        font-size: 14px;
+    }
+    .remmm {
+      font-size: 11px;
+    
+    }
+    .btn_area{
+     padding-top: 15px;
+      
+  }.modal-content {
+    border: none!important;
+}
+  .input-names {
+    font-size: 14px;}
+  
+    .invalid-feedback {  
+   font-weight: 600!important;
+  }
+  .left-alig span {
+    font-size: 10px!important;
+  }
+  
+  .chk-fix-22 {
+    left: 56px!important;
+    top: 7px;
+
+  }
+  .center_point {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  button.forget-cancl.bnt_chnage {
+    background-color: #fff;
+      font-weight: normal;
+      border-color: #ada8a8;
+      margin: 0 10px 0 0px;
+      padding: 6px 30px 6px 30px;
+      border-radius: 7px;
+  
+  }
+  
+  
+  button.btn-signup.new_signup {
+    background-color: #3b9bf1;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 6px 30px 6px 30px;
+    border: solid;
+    border-width: 1px;
+    border-color: #3b9bf1;
+    border-radius: 7px;
+  }
+  
+  .forget-popup {
+    padding-bottom: 20px !important;
+  }
+  
+  .forget-heght{
+    height: auto!important;
+   padding: 20px 20px 20px 20px;
+  }
+  .modal-content {
+    width: 80% !important;
+    margin: 0px auto!important;
+}
+button.myname_setting {
+  margin-left: -42px;
+    font-size: 14px;
+  }
+  button.myname_setting {
+    margin-left: -24px;
+  }
+  ul#dropdown-basic {
+    left: -120px!important;
+  }
+  .right-header.btn_img.updated-responsivess img {
+    padding: 5px 0 0 0;
+}
+
+.btn_area {
+  
+  padding: 0 0px 0px 0px;
+  
+}
+ul#dropdown-basic{
+  left: -138px!important;
+}
+button.myname_setting{
+  margin-left: -16px!important;
+}
+.right-header img {
+ margin-left: 66px!important;
+}
+.btn_area .btn_img {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.right-header img {
+  margin-left: 17px!important;
+}
+.btn-signup {
+  padding: 7px 20px 7px 20px;
+  font-size: 12px;
+}
+   .remmm{
+     font-size: 10px;
+ }
+ .headings-input-fields.change_font {
+  font-size: 11px;
+ }
+
+  
+
+      }
+
+      @media only screen and (min-device-width : 641px) and (max-device-width : 767px) {
+        .fff {
+          position: fixed;
+          background-image: url(../../../assets/images/popup-bg.jpg);
+          left: 45px;
+          right: 43px;
+          top: 48px;
+          background-size: contain;
+          background-position: 0px 60px;
+          width: 60%;
+        margin: 0 auto;
+        }
+        .headings-input-fields {
+          padding: 10px 0 10px 0!important;
+        }
+        .input-names {
+          margin-top: 0px !important;
+      }
+      .date-picker{
+        background-color: #ffffffa6 !important;  
+      }
+      .date-picker {
+        padding-bottom: 0px !important;
+        margin: 40px 0 40px 0!important;
+      }.logo.set_view a img {
+        padding: 9px 0 0 0;
+      }.birth-updated{
+        position: relative;
+        left: 0px;
+        font-size: 14px;
+      }
+      .updated-signupmod {
+        position: relative;
+        left: 0px;
+      }
+      .terms-fix-pad {
+        padding-left: 0px;
+      }
+      .chk-fix-22 {
+        left: 15px;
+        top: 6px;
+      }
+      
+      .noti_info{font-size: 11px;
+        color: #f94242;
+        padding-left: 36px; }
+       
+        .sign-updateds {
+          position: relative;
+          left: -26px;
+          font-size: 14px;
+      }
+      .remmm {
+        font-size: 11px;
+      
+      }
+      .btn_area{
+       padding-top: 15px;
+        
+    }
+    .modal-content {
+      border: none!important;
+  }.btn_area{
+    width: 47% !important;
+}
+.btn_area .btn_img {
+ 
+  margin-left: 60px;
+  margin-right: 15px;
+}
+
+  .input-names {
+    font-size: 14px;}
+  
+    .invalid-feedback {  
+   font-weight: 600!important;
+  }
+  .left-alig span {
+    font-size: 10px!important;
+  }
+  
+  .chk-fix-22{
+    left: 51px!important;
+    top: 8px;
+}
+  .center_point {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  button.forget-cancl.bnt_chnage {
+    background-color: #fff;
+      font-weight: normal;
+      border-color: #ada8a8;
+      margin: 0 10px 0 0px;
+      padding: 6px 30px 6px 30px;
+      border-radius: 7px;
+  
+  }
+  
+  
+  button.btn-signup.new_signup {
+    background-color: #3b9bf1;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 6px 30px 6px 30px;
+    border: solid;
+    border-width: 1px;
+    border-color: #3b9bf1;
+    border-radius: 7px;
+  }
+  
+  .forget-popup {
+    padding-bottom: 20px !important;
+  }
+  
+  .forget-heght{
+    height: auto!important;
+   padding: 20px 20px 20px 20px;
+  }
+  .modal-content {
+    width: 80% !important;
+    margin: 0px auto;
+}
+button.myname_setting {
+  margin-left: -42px;
+    font-size: 14px;
+  }
+  
+  .right-header.btn_img.updated-responsivess img {
+    padding: 5px 0 0 0;
+}
+button.myname_setting {
+  margin-left: -15px;
+}
+ul#dropdown-basic {
+  left: -120px!important;
+}
+.btn_area {
+  
+  padding: 0 0px 0px 0px;
+  
+}
+ul#dropdown-basic{
+  left: -138px!important;
+}
+button.myname_setting{
+  margin-left: -16px!important;
+}
+.right-header img {
+ margin-left: 66px!important;
+}
+.btn_area .btn_img {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.right-header img {
+  margin-left: 17px!important;
+}
+.btn-signup {
+  padding: 7px 20px 7px 20px;
+  font-size: 12px;
+}
+   .remmm{
+     font-size: 10px;
+ }
+ .headings-input-fields.change_font {
+  font-size: 11px;
+ }
+        }
+
+
+        @media only screen and (min-device-width : 768px) and (max-device-width : 800px) {
+          .fff {
+            position: fixed;
+            background-image: url(../../../assets/images/popup-bg.jpg);
+            left: 45px;
+            right: 43px;
+            top: 48px;
+            background-size: contain;
+            background-position: 0px 60px;
+            width: 60%;
+          margin: 0 auto;
+          }
+          .headings-input-fields {
+            padding: 10px 0 10px 0!important;
+          }
+          .input-names {
+            margin-top: 0px !important;
+        }
+        .date-picker{
+          background-color: #ffffffa6 !important;  
+        }
+        .date-picker {
+          padding-bottom: 0px !important;
+          margin: 40px 0 40px 0!important;
+        }.logo.set_view a img {
+          padding: 9px 0 0 0;
+        }.birth-updated{
+          position: relative;
+          left: 0px;
+          font-size: 14px;
+        }
+        .updated-signupmod {
+          position: relative;
+          left: 0px;
+        }
+        .terms-fix-pad {
+          padding-left: 0px;
+        }
+        .chk-fix-22 {
+          left: 15px;
+          top: 6px;
+        }
+        
+        .noti_info{font-size: 11px;
+          color: #f94242;
+          padding-left: 36px; }
+         
+          .sign-updateds {
+            position: relative;
+            left: -26px;
+            font-size: 14px;
+        }
+        .remmm {
+          font-size: 11px;
+        
+        }
+        .btn_area{
+         padding-top: 15px;
+          
+      }
+      .modal-content {
+        border: none!important;
+    }
+    .btn_area{
+      width: 48% !important;
+ } .main_form {
+  padding: 0 40px 0 40px!important;
+ }
+ .col-md-6.right.mobile-res {
+  text-align: left!important;
+}span.alred-reg.not-reg-modal {
+  font-size: 12px;
+}
+.input-names {
+  font-size: 16px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+
+
+.chk-fix-22 {
+  left: 60px!important;
+    top: 7px;
+}.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+}
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+button.myname_setting {
+  margin-left: -42px;
+    font-size: 14px;
+  }
+  .right-header.btn_img.updated-responsivess img {
+    padding: 5px 0 0 0;
+}
+button.myname_setting {
+  margin-left: -24px;
+}
+ul#dropdown-basic {
+  left: -120px!important;
+}
+.btn-signup{
+  padding: 7px 30px 7px 28px;
+  font-size: 13px;
+}
+   .remmm{
+     font-size: 12px;
+ }
+ .headings-input-fields.change_font {
+  font-size: 11px;
+ }
+          }
+
+          
+        @media only screen and (min-device-width : 801px) and (max-device-width : 900px) {
+          .fff {
+            position: fixed;
+            background-image: url(../../../assets/images/popup-bg.jpg);
+            left: 45px;
+            right: 43px;
+            top: 48px;
+            background-size: contain;
+            background-position: 0px 60px;
+            width: 60%;
+          margin: 0 auto;
+          }
+          .headings-input-fields {
+            padding: 10px 0 10px 0!important;
+          }
+          .input-names {
+            margin-top: 0px !important;
+        }
+        .date-picker{
+          background-color: #ffffffa6 !important;  
+        }
+        .date-picker {
+          padding-bottom: 0px !important;
+          margin: 50px 0 50px 0!important;
+        }.logo.set_view a img {
+          padding: 9px 0 0 0;
+        }.birth-updated{
+          position: relative;
+          left: 0px;
+          font-size: 14px;
+        }
+        .updated-signupmod {
+          position: relative;
+          left: 0px;
+        }
+        .terms-fix-pad {
+          padding-left: 0px;
+        }
+        .chk-fix-22 {
+          left: 65px;
+          top: 7px;
+        }
+        
+        .noti_info{font-size: 11px;
+          color: #f94242;
+          padding-left: 36px; }
+         
+          .sign-updateds {
+            position: relative;
+            left: -26px;
+            font-size: 14px;
+        }
+        .remmm {
+          font-size: 11px;
+        
+        }
+        .btn_area{
+         padding-top: 15px;
+          
+      }
+      .modal-content {
+        border: none!important;
+    }
+    .btn_area{
+      width: 48% !important;
+ }.input-names {
+  font-size: 14px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}    
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+}
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}      }
+
+button.myname_setting {
+  margin-left: -24px;
+}
+
+
+ 
+  .right-header.btn_img.updated-responsivess img {
+    padding: 5px 0 0 0;
+}
+
+
+  
+  @media only screen and (min-device-width : 901px) and (max-device-width : 992px) {
+          .fff {
+            position: fixed;
+            background-image: url(../../../assets/images/popup-bg.jpg);
+            left: 45px;
+            right: 43px;
+            top: 48px;
+            background-size: contain;
+            background-position: 0px 60px;
+            width: 54%;
+          margin: 0 auto;
+          }
+          .headings-input-fields {
+            padding: 10px 0 10px 0!important;
+          }
+          .input-names {
+            margin-top: 0px !important;
+        }
+        .date-picker{
+          background-color: #ffffffa6 !important;  
+        }
+        .date-picker {
+          padding-bottom: 0px !important;
+          margin: 30px 0 30px 0!important;
+        }.logo.set_view a img {
+          padding: 9px 0 0 0;
+        }.birth-updated{
+          position: relative;
+          left: 0px;
+          font-size: 14px;
+        }
+        .updated-signupmod {
+          position: relative;
+          left: 0px;
+        }
+        .terms-fix-pad {
+          padding-left: 0px;
+        }
+        .chk-fix-22 {
+          left: 67px;
+          top: 7px;
+        }
+        
+        
+        .noti_info{font-size: 11px;
+          color: #f94242;
+          padding-left: 36px; }
+         
+          .sign-updateds {
+            position: relative;
+            left: -26px;
+            font-size: 14px;
+        }
+        .remmm {
+          font-size: 11px;
+        
+        }
+        .btn_area{
+         padding-top: 15px;
+          
+      }
+      .modal-content {
+        border: none!important;
+    }.btn_area{
+      width: 42% !important;
+ }    .input-names {
+  font-size: 14px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}  .center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+}
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+.headings-input-fields.change_font {
+ font-size: 15px;
+ }
+ .btn-signup {
+ font-size: 15px;
+}
+          
+          }
+
+          @media only screen and (min-device-width : 993px) and (max-device-width : 1024px) {
+            
+            .chk-fix-22 {
+              left: 55px;
+              top: 7px;
+            }
+            
+            .noti_info{font-size: 11px;
+              color: #f94242;
+              padding-left: 36px; }
+             
+              .sign-updateds {
+                position: relative;
+                left: -26px;
+                font-size: 14px;
+            }
+            .remmm {
+              font-size: 11px;
+            
+            }
+            .btn_area{
+             padding-top: 15px;
+              
+          }
+          .modal-content {
+            border: none!important;
+        }.btn_area{
+          width: 35% !important;
+     }  
+     .date-picker {
+      padding-bottom: 0px !important;
+      margin-top: 50px !important;
+      margin: 40px 0 50px 0;
+      float: left;
+      width: 100%;
+  }  
+  .date-picker {
+  padding: 30px 0 30px 0!important;
+}   .input-names {
+  font-size: 18px;
+
+}  .main_form{
+ padding: 0 50px 0 50px;
+} 
+.date-picker {
+ box-shadow: none;
+}.input-names {
+  font-size: 15px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+
+.headings-input-fields.change_font {
+ font-size: 15px;
+
+ 
+
+}
+
+   }
+   @media only screen and (min-device-width : 1025px) and (max-device-width : 1100px) {
+            
+    .chk-fix-22 {
+      left: 62px;
+    top: 7px;
+    }
+    .footer-updates span{
+    font-size: 12px;
+  }
+    
+    .noti_info{font-size: 11px;
+      color: #f94242;
+      padding-left: 36px; }
+     
+      .sign-updateds {
+        position: relative;
+        left: -26px;
+        font-size: 14px;
+    }
+    .remmm {
+      font-size: 11px;
+    
+    }
+    .btn_area{
+     padding-top: 15px;
+      
+  }
+  .modal-content {
+    border: none!important;
+}.btn_area{
+  width: 34% !important;
+}  
+.date-picker {
+padding-bottom: 0px !important;
+margin-top: 50px !important;
+margin: 40px 0 50px 0;
+float: left;
+width: 100%;
+}  
+.date-picker {
+padding: 30px 0 30px 0!important;
+}   .input-names {
+font-size: 18px;
+
+}  .main_form{
+padding: 0 50px 0 50px;
+} 
+.date-picker {
+box-shadow: none;
+}
+
+.not-reg-modal{
+  margin-right: 10px;
+}
+.right{
+  text-align: left!important; 
+}
+.sign-up-pop-col{
+ font-size: 14px;
+}
+.updated-signupmod{
+ left: 0px;
+}
+.modal-body {
+  padding: 0px !important;
+}
+.input-names {
+  font-size: 15px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+  margin-bottom: 14px;
+
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+
+
+}
+@media only screen and (min-device-width : 1101px) and (max-device-width : 1200px) {
+            
+  .chk-fix-22 {
+    left: 65px;
+    top: 7px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }
+  .btn_area{
+   padding-top: 15px;
+    
+}
+.modal-content {
+  border: none!important;
+}.btn_area{
+width: 33% !important;
+}  
+.date-picker {
+padding-bottom: 0px !important;
+margin-top: 50px !important;
+margin: 40px 0 50px 0;
+float: left;
+width: 100%;
+}  
+.date-picker {
+padding: 30px 0 30px 0!important;
+}   .input-names {
+font-size: 18px;
+
+}  .main_form{
+padding: 0 50px 0 50px;
+} 
+.date-picker {
+box-shadow: none;
+}
+
+.not-reg-modal{
+margin-right: 10px;
+}
+.right{
+text-align: left!important; 
+}
+.sign-up-pop-col{
+font-size: 14px;
+}
+.updated-signupmod{
+left: 0px;
+}
+.modal-body {
+padding: 0px !important;
+}
+.input-names {
+  font-size: 15px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+  margin-bottom: 15px;
+
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+
+}
+@media only screen and (min-device-width : 1201px) and (max-device-width : 1366px) {
+            
+  .chk-fix-22 {
+    left: 65px;
+    top: 6px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }
+  .btn_area{
+   padding-top: 15px;
+    
+}
+.modal-content {
+  border: none!important;
+}.btn_area{
+width: 50% !important;
+}  
+.date-picker {
+padding-bottom: 0px !important;
+margin-top: 50px !important;
+margin: 40px 0 50px 0;
+float: left;
+width: 100%;
+}  
+.date-picker {
+padding: 30px 0 30px 0!important;
+}   .input-names {
+font-size: 18px;
+
+}  .main_form{
+padding: 0 50px 0 50px;
+} 
+.date-picker {
+box-shadow: none;
+}
+
+.not-reg-modal{
+margin-right: 10px;
+}
+.right{
+text-align: left!important; 
+}
+.sign-up-pop-col{
+font-size: 14px;
+}
+.updated-signupmod{
+left: 0px;
+}
+.modal-body {
+padding: 0px !important;
+}
+
+.btn_area {
+ padding-top: 10px;
+ width: 30% !important;
+}
+.modal-content {
+min-height: auto!important;
+}
+
+.input-names {
+  font-size: 16px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+
+}
+
+@media only screen and (min-device-width : 1367px) and (max-device-width : 1600x) {
+  
+            
+  .chk-fix-22 {
+    left: 15px;
+    top: 6px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }
+  .btn_area{
+   padding-top: 15px;
+    
+}
+.modal-content {
+  border: none!important;
+}.btn_area{
+width: 50% !important;
+}  
+.date-picker {
+padding-bottom: 0px !important;
+margin-top: 50px !important;
+margin: 40px 0 50px 0;
+float: left;
+width: 100%;
+}  
+.date-picker {
+padding: 30px 0 30px 0!important;
+}   .input-names {
+font-size: 18px;
+
+}  .main_form{
+padding: 0 50px 0 50px;
+} 
+.date-picker {
+box-shadow: none;
+}
+
+.not-reg-modal{
+margin-right: 10px;
+}
+.right{
+text-align: left!important; 
+}
+.sign-up-pop-col{
+font-size: 14px;
+}
+.updated-signupmod{
+left: 0px;
+}
+.modal-body {
+padding: 0px !important;
+}
+
+.btn_area {
+ padding-top: 10px;
+ width: 40% !important;
+}
+.modal-content {
+min-height: auto!important;
+}
+.input-names {
+  font-size: 16px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+
+
+}
+
+
+@media only screen and (min-device-width : 1367px) and (max-device-width : 1500px) {
+            
+  .chk-fix-22 {
+    left: 77px;
+    top: 7px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }
+  .btn_area{
+   padding-top: 15px;
+    
+}
+.modal-content {
+  border: none!important;
+}.btn_area{
+width: 50% !important;
+}  
+.date-picker {
+padding-bottom: 0px !important;
+margin-top: 50px !important;
+margin: 40px 0 50px 0;
+float: left;
+width: 100%;
+}  
+.date-picker {
+padding: 30px 0 30px 0!important;
+}   .input-names {
+font-size: 18px;
+
+}  .main_form{
+padding: 0 50px 0 50px;
+} 
+.date-picker {
+box-shadow: none;
+}
+
+.not-reg-modal{
+margin-right: 10px;
+}
+.right{
+text-align: left!important; 
+}
+.sign-up-pop-col{
+font-size: 14px;
+}
+.updated-signupmod{
+left: 0px;
+}
+.modal-body {
+padding: 0px !important;
+}
+
+.btn_area {
+ padding-top: 10px;
+ width: 27% !important;
+}
+.modal-content {
+min-height: auto!important;
+}
+
+.input-names {
+  font-size: 16px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+.form-details {
+ margin-bottom: 20px!important;
+
+}
+
+}
+
+
+/**
+@media only screen and (min-device-width : 1501px) and (max-device-width : 1600px) {
+            
+  .chk-fix-22 {
+    left: 15px;
+    top: 6px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }
+  .btn_area{
+   padding-top: 15px;
+    
+}
+.modal-content {
+  border: none!important;
+}.btn_area{
+width: 50% !important;
+}  
+.date-picker {
+padding-bottom: 0px !important;
+margin-top: 50px !important;
+margin: 40px 0 50px 0;
+float: left;
+width: 100%;
+}  
+.date-picker {
+padding: 30px 0 30px 0!important;
+}   .input-names {
+font-size: 18px;
+
+}  .main_form{
+padding: 0 50px 0 50px;
+} 
+.date-picker {
+box-shadow: none;
+}
+
+.not-reg-modal{
+margin-right: 10px;
+}
+.right{
+text-align: left!important; 
+}
+.sign-up-pop-col{
+font-size: 14px;
+}
+.updated-signupmod{
+left: 0px;
+}
+.modal-body {
+padding: 0px !important;
+}
+
+.btn_area {
+ padding-top: 10px;
+ width: 40% !important;
+}
+.modal-content {
+min-height: auto!important;
+}
+
+.input-names {
+  font-size: 16px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+
+}
+.center_point{
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 60px 0 0 0;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+  font-weight: normal;
+  border-color: #ada8a8;
+  margin: 0px 10px 0 0px;
+  padding: 7px 39px 7px 39px;
+  border-radius: 5px;
+  position: relative;
+  top: 4px;
+ font-size: 17px;
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+
+}
+**/
+
+
+@media only screen and (min-device-width : 1601px) and (max-device-width : 1920px) {
+            
+  .chk-fix-22 {
+    left: 15px;
+    top: 6px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }
+  .btn_area{
+   padding-top: 15px;
+    
+}
+.modal-content {
+  border: none!important;
+}.btn_area{
+width: 50% !important;
+}  
+.date-picker {
+padding-bottom: 0px !important;
+margin-top: 50px !important;
+margin: 40px 0 50px 0;
+float: left;
+width: 100%;
+}  
+.date-picker {
+padding: 30px 0 30px 0!important;
+}   .input-names {
+font-size: 18px;
+
+}  .main_form{
+padding: 0 50px 0 50px;
+} 
+.date-picker {
+box-shadow: none;
+}
+
+.not-reg-modal{
+margin-right: 10px;
+}
+.right{
+text-align: left!important; 
+}
+.sign-up-pop-col{
+font-size: 14px;
+}
+.updated-signupmod{
+left: 0px;
+}
+.modal-body {
+padding: 0px !important;
+}
+
+.btn_area {
+ padding-top: 10px;
+ width: 40% !important;
+}
+.modal-content {
+min-height: auto!important;
+}
+
+.input-names {
+  font-size: 16px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+.modal-content {
+  width: 80% !important;
+  margin: 0px auto;
+}
+
+}
+
+
+@media only screen and (min-device-width : 1921px) and (max-device-width : 2560px) {
+            
+  .chk-fix-22 {
+    left: 15px;
+    top: 6px;
+  }
+  
+  .noti_info{font-size: 11px;
+    color: #f94242;
+    padding-left: 36px; }
+   
+    .sign-updateds {
+      position: relative;
+      left: -26px;
+      font-size: 14px;
+  }
+  .remmm {
+    font-size: 11px;
+  
+  }
+  .btn_area{
+   padding-top: 15px;
+    
+}
+.modal-content {
+  border: none!important;
+}.btn_area{
+width: 50% !important;
+}  
+.date-picker {
+padding-bottom: 0px !important;
+margin-top: 50px !important;
+margin: 40px 0 50px 0;
+float: left;
+width: 100%;
+}  
+.date-picker {
+padding: 30px 0 30px 0!important;
+}   .input-names {
+font-size: 18px;
+
+}  .main_form{
+padding: 0 50px 0 50px;
+} 
+.date-picker {
+box-shadow: none;
+}
+
+.not-reg-modal{
+margin-right: 10px;
+}
+.right{
+text-align: left!important; 
+}
+.sign-up-pop-col{
+font-size: 14px;
+}
+.updated-signupmod{
+left: 0px;
+}
+.modal-body {
+padding: 0px !important;
+}
+
+.btn_area {
+ padding-top: 10px;
+ width: 40% !important;
+}
+.modal-content {
+min-height: auto!important;
+}
+
+.input-names {
+  font-size: 16px;}
+
+  .invalid-feedback {  
+ font-weight: 600!important;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 20px 0 20px 0;
+}
+.form-details{
+  padding: 20px 20px;
+
+}
+.center_point {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+button.forget-cancl.bnt_chnage {
+  background-color: #fff;
+    font-weight: normal;
+    border-color: #ada8a8;
+    margin: 0 10px 0 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 7px;
+
+}
+
+
+button.btn-signup.new_signup {
+  background-color: #3b9bf1;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 6px 30px 6px 30px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3b9bf1;
+  border-radius: 7px;
+}
+
+.forget-popup {
+  padding-bottom: 20px !important;
+  padding-top: 20px!important;
+}
+
+
+.forget-heght{
+  height: auto!important;
+ padding: 20px 20px 20px 20px;
+}
+
+}
+
+
+
+.content.ng-star-inserted {
+ text-align: center;
+ width: 100%;
+  display: inline-grid;
+  padding: 0px 0 0 0;
+}
+.ng-star-inserted {
+/*  width: 100%!important; */
+ margin: 0px auto!important;
+  padding: 10px 0 10px 0;
+}
+.card {
+ border: none!important;
+}
+
+
+
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  border-radius: 0px!important;
+  border: 1px solid #3B9BF1!important;
+  text-align: center;
+  font-size: 32px;
+}
+
+                     .ng-star-inserted {
+                      font-weight: bold;
+                  }button.close.closepop-btn {
+                    opacity: 1.00!important;
+                    z-index: 9999!important;
+
+                }.modal-body.padding_no {
+                  padding: 0 0 0 0;
+              }
+              span.date_select_heading {
+                font-weight: 600;
+                color: #000;
+            }
+            .des_data2 a {
+              cursor: pointer!important;
+          }
+
+
+         
+          .a-o-i {
+            font-size: 18px;
+            color: #000;
+            padding: 0 0 0px 0;
+            line-height: 32px;
+        }
+        .wrapper input {
+          border-radius: 0px!important;
+          border-color: #3b9bf1!important;
+        margin: 20px 0 20px 0;
+      }
+
+      a.set_re_otp {
+        font-weight: bold;
+        color: #3b9bf1;
+    }
+
+    .otp-input {
+     font-size: 25px!important;
+  }
+
+.a-o-i-t {
+  @extend .a-o-i;
+  font-size: 25px;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.o-c{
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+p.custom_error {
+  color: #ff0000;
+  font-style: italic;
+}
+
+.s-t {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+  li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+}
+.btn-updt {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid #ccc4c4;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.card {
+  
+  box-shadow:none;
+  border-radius: 4px;
+  background: white;
+  margin: 0 auto;
+}
+
+.card .wrapper {
+  display: flex;
+}.wrapper {
+  padding: 20px 0 20px 0;
+}
+
+.o-t-p {
+  display: block;
+  margin-top: 10px;
+  font-size: 19px;
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  display: inline-block;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+.otp-input {
+border-radius: 0px!important;
+}
+
+.f-c {
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  margin: 0.5rem 0;
+  height: 1.5rem;
+  padding: 0 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+  }
+  .o-c {
+    display: block;
+  }
+  .list {
+    li {
+      padding-left: 2px;
+      width: calc(50% - 2px);
+      display: inline-block;
+    }
+  }
+}
+
+.invalid-feedback{
+  font-weight: 500;
+  font-size: 13px;
+  font-style: italic;
+  color: #ff0000;
+}
+
+.sign-updateds{
+  position: relative;
+  left: -26px;
+  font-size: 20px;
+  font-weight: bold;
+  top: 2px;
+}
+
+.errormsg {
+  color: #ff0000;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 15px;
+}
+i.fa.fa-caret-down.big {
+  font-size: 23px;
+  color: #a6a6a6;
+  position: relative;
+  left: -16px;
+}
+h6.guardian_details {
+  font-weight: normal;
+  padding-bottom: 20px;
+}

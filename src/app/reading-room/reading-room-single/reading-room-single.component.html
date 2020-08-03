@@ -1,0 +1,323 @@
+<div class="middle_section">
+    <div class="clearfix"></div>
+    <div class="col-md-3 col-lg-3">
+    <p class="blog_box" href="javascript:void(0)" id="hide2">Reading Room</p>
+  </div>
+    <div class="clearfix"></div>
+    <div class="frileft_posation" id="hide1">
+      <div class="frilefles_bg">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="fril34"> <img src="assets/images/fireflies.png" class="img-fluid w-100" alt="">
+                <div class="main_info_34">
+<!--                   <div *ngFor="let fullInfo of sAttributes.userpublicationsPageItems; let i = index">
+                    <div *ngIf="fullInfo._id == sAttributes.userpublicationsId">
+
+                    </div>
+                  </div> -->
+                  <div class="row" *ngIf="sAttributes.readerPageItems">
+                    <div class="col-md-6 col-6">
+                      <div class="like_and"> <span class="img_blog"><img src="assets/images/reads.png" alt=""></span>
+                        <p>
+                          <span *ngIf="sAttributes.readerPageItems.readCount.length == 0">0</span>
+                          <span *ngIf="sAttributes.readerPageItems.readCount.length > 0">{{sAttributes.readerPageItems.readCount.length}}</span>
+                          <br>
+                          Reads</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-6 my-auto">
+                      <div class="fabs_fb">
+              
+                        <div class="like_share shair_and_likes">
+                          <a href="javascript:void(0)" (click)="saveReaderLike()" *ngIf="sAttributes.readerPageItems.readerlike.length == 0"
+                            class="like_hover">
+                            <img src="assets/images/heart.png" alt="">
+                          </a>
+                          <a href="javascript:void(0)" *ngIf="sAttributes.readerPageItems.readerlike.length > 0" (click)="updateReaderLike(sAttributes.readerPageItems.readerlike[0].likeStatus)"
+                            class="like_hover">
+                            <img *ngIf="sAttributes.readerPageItems.readerlike[0].likeStatus == 1" src="assets/images/hrt_icon2.png" alt="">
+                            <img *ngIf="sAttributes.readerPageItems.readerlike[0].likeStatus == 0" src="assets/images/heart.png" alt="">
+                          </a>
+                          <div class="like-tooltip">
+                            <div class="bg_img">
+                              <p><img src="assets/images/love-post.png" alt="" /> <span>{{sAttributes.readerPageItems.readerlike.length}}</span></p>
+                            </div>
+                          </div>
+                          <a href="javascript:void(0)" (click)="socialShareOpen()" class="share_hover"><img
+                              src="assets/images/share1.png" alt=""></a>
+                          <div class="share-tooltip">
+                            <div class="bg_img share">
+                              <p><img src="assets/images/share-icon.png" alt="" /> <span>0</span></p>
+                            </div>
+                          </div>
+                          <a *ngIf="sAttributes.readerPageItems.readerbookmark.length == 0" href="javascript:void(0)" class="writer_hover" (click)="saveReaderBookMark()">
+                              <img src="assets/images/book_icon3.png" />
+                          </a>
+                          <a *ngIf="sAttributes.readerPageItems.readerbookmark.length > 0" href="javascript:void(0)" class="writer_hover"
+                            (click)="updateReaderBookMark(sAttributes.readerPageItems.readerbookmark[0].bookMarkStatus)">
+                            <img *ngIf="sAttributes.readerPageItems.readerbookmark[0].bookMarkStatus == 1" src="assets/images/book_icon2.png" />
+                            <img *ngIf="sAttributes.readerPageItems.readerbookmark[0].bookMarkStatus == 0" src="assets/images/book_icon3.png" />
+                          </a>
+                          <div class="writer-tooltip">
+                            <div class="bg_img bookmark">
+                              <p><img src="assets/images/bookmark.png" alt="" /> <span>0</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <a target="_blank" class="fab red" tooltip="Share"><i class="prime zmdi animated rotateIn zmdi-plus"></i></a>  -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="publisher-name_cont">
+                    <h5>Publisher: <span class="swti_rajg_67"><img src="assets/images/publisher.png" alt=""></span> <span class="write67_">Write Awayy</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="fliter_78">
+                  <h1>FIREFLIES <span>- some shiny short stories</span>
+                    <div class="star_rating starraign_3">
+                      <ngx-star-rating [(ngModel)]="bookRating" [id]="'book-rating'" *ngIf="sAttributes.readerPageItems && sAttributes.readerPageItems.readerrating.length == 0" (click)="saveReaderRating()"></ngx-star-rating >
+                        <ngx-star-rating [(ngModel)]="bookRating" [id]="'book-rating'" *ngIf="sAttributes.readerPageItems && sAttributes.readerPageItems.readerrating.length > 0" (click)="updateReaderRating()"></ngx-star-rating >
+                    </div>
+                  </h1>
+                  <div class="genre_fantasy"><strong>Genre:</strong> Fantasy <span> June 24, 2020</span></div>
+                  <div class="frilesh_blog_conte">
+                    <div class="contacet_20 text-center"><span>Contents</span></div>
+                    <!--{{content.userpublications}}-->
+                    <div class="contents_left">
+                      <ul>
+                        <li *ngFor="let content of sAttributes.readingTopic[paginationIndex]; let idx = index" (click)="fullInfo(content._id, content.sNo)">
+                          <p>{{content.sNo}}. {{content.topic || 'test topic'}} </p>
+                          <span><span class="by_s">by</span> {{content.user[0].firstName}} {{content.user[0].lastName}}</span></li>
+                      </ul>
+                    </div>
+                    <div class="secoll_page contents_right">
+                      <ul>
+                        <li><a href="javascript:void(0)" (click)="paginationIndex >= 1 ? topicPagination('-') : ''"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+                        <li><span *ngIf="sAttributes.chunck">{{paginationIndex + 1}}</span></li>
+                        <li>/</li>
+                        <li><span *ngIf="sAttributes.chunck">{{sAttributes.chunck.length}}</span></li>
+                        <li><a href="javascript:void(0)" (click)="paginationIndex == sAttributes.chunck.length - 1 ? '': topicPagination('+') "><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reding_rooms" *ngIf="sAttributes.userpublicationsId" #fullScreen>
+      <div class="container-fluid">
+      <div *ngFor="let fullInfo of sAttributes.userpublicationsPageItems; let i = index">
+        <div class="reading_content" *ngIf="fullInfo._id == sAttributes.userpublicationsId">
+          <div class="row">
+            <div class="minimaz" *ngIf="!sAttributes.fullScreen"><a href="javascript:void(0)" (click)="openFullscreen()"><img src="assets/images/full_icon.png" alt=""></a></div>
+            <div class="minimaz" *ngIf="sAttributes.fullScreen"><a href="javascript:void(0)" (click)="closeFullscreen()"><img src="assets/images/mini_icon.png" alt=""></a></div>
+            <div class="col-md-12">
+              <div class="reding_7d"> <span class="reading_img_2">
+                <img src="assets/images/reading-room/{{fullInfo.sNo}}.png" class="img-fluid" alt="">
+              </span>
+                <h1>{{fullInfo.topic}}</h1>
+                <div class="reding_7d" [innerHTML]="fullInfo.content"></div>
+              </div>
+              <div class="blot_34s89">
+                <div class="row">
+                  <div class=" col-12 col-md-3 my-auto">
+                    <div class="row">
+                      <div class="col-6 col-md-5">
+                        <div class="like_and"> <span class="img_blog"><img src="assets/images/reads.png" alt=""></span>
+                          <p><span>0</span><br>
+                            Reads</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-6  my-auto">
+                        <div class="fabs_fb">
+                          <div class="like_share"> 
+
+                            <a href="javascript:void(0)" (click)="saveUserpublicationLike()" *ngIf="fullInfo.tlikes.length == 0" class="reader-like-hover">
+                              <img src="assets/images/heart.png" alt="">
+                            </a> 
+                            <a href="javascript:void(0)" (click)="updateUserpublicationLike()" *ngIf="fullInfo.tlikes.length > 0" class="reader-like-hover">
+                              <img  *ngIf="fullInfo.tbookmark.likeStatus == 0" src="assets/images/heart.png" />
+                              <img src="assets/images/hrt_icon2.png" />
+                            </a> 
+                            <a href="javascript:void(0)" class="reader-share-hover" (click)="socialShareOpen()"><img src="assets/images/share1.png" alt=""></a>
+
+
+
+                            <a *ngIf="fullInfo.tbookmark.length == 0" href="javascript:void(0)" class="reader-bookmark-hover" (click)="saveUserpublicationBookMark()"><img src="assets/images/book_icon3.png" /></a>
+                            <a *ngIf="fullInfo.tbookmark.length > 0" href="javascript:void(0)" class="reader-bookmark-hover" (click)="updateUserpublicationBookMark()">
+                              <img  *ngIf="fullInfo.tbookmark.bookMarkStatus == 0" src="assets/images/book_icon3.png" />
+                              <img  *ngIf="fullInfo.tbookmark.bookMarkStatus > 0" src="assets/images/book_icon2.png" />
+                            </a>
+
+
+                            <div class="like-tooltip">
+                              <div class="bg_img">
+                                <p><img src="assets/images/love-post.png" alt="" /> <span>{{fullInfo.tlikes.length}}</span></p>
+                              </div>
+                            </div>
+                            
+                            <div class="share-tooltip">
+                              <div class="bg_img share">
+                                <p><img src="assets/images/share-icon.png" alt="" /> <span>100</span></p>
+                              </div>
+                            </div>
+                            
+                            <div class="writer-tooltip">
+                              <div class="bg_img bookmark">
+                                <p><img src="assets/images/bookmark.png" alt="" /> <span>{{fullInfo.tbookmark.length}}</span></p>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2 my-auto">
+                    <div class="star_rating reading_room_star">
+                      <ngx-star-rating [(ngModel)]="readerRating" [id]="'reader-rating'" *ngIf="fullInfo.tbookrating.length == 0" (click)="saveUserpublicationRating()"></ngx-star-rating >
+                      <ngx-star-rating [(ngModel)]="readerRating" [id]="'reader-rating'" *ngIf="fullInfo.tbookrating.length > 0" (click)="updateUserpublicationRating()"></ngx-star-rating >
+                    </div>
+                  </div>
+                  <div class="col-md-2 text-center my-auto">
+                    <div class="post_review">
+                      <a href="javascript:void(0)" (click)="openWrirteReview()"><img alt="" src="assets/images/book-right.png" /></a> Post a Review
+                    </div>
+                  </div>
+                  <div class="col-md-5 my-auto text-right">
+                    <div class="botton_blog_content">
+                      <h5 (click)="openAboutUser(fullInfo)">by <span class="swti_rajg"><img src="assets/images/user.jpg" alt=""></span>	{{fullInfo.user[0].firstName}} {{fullInfo.user[0].lastName }} </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="secoll_page contents_right">
+        <ul>
+          <li><a href="javascript:void(0)" (click)="fullPaginationIndex >= 1 ? fullTopicPagination('-') : ''"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+          <li><span *ngIf="sAttributes.sericalNo">{{sAttributes.sericalNo}}</span></li>
+          <li>/</li>
+          <li *ngIf="sAttributes.userpublicationsPageItems">{{sAttributes.userpublicationsPageItems.length}}</li>
+          <li><a href="javascript:void(0)" (click)="fullPaginationIndex == sAttributes.userpublicationsPageItems.length - 1 ? '': fullTopicPagination('+') "><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <ng-template #socialMedia>
+    <div class="modal-body fd_bc_rr">
+      <button type="button" class="close_km2" aria-label="Close" (click)="socialShareClose()">
+        <span aria-hidden="true"><img src="../../../assets/images/close-icon.png" /></span>
+      </button>
+      <div class="footer-modal">
+        <p class="heading_share_views">Share on your Social Media:</p>
+        <div class="social-icons">
+          <a href="javascript:void(0)" target="_blank" ceiboShare  [facebook]="{url:sAttributes.currentUrl, text:'Reading Room:'}"> 
+            <i class="fa fa-facebook circle "></i>
+          </a>
+          <a href="javascript:void(0)" ><i class="fa fa-instagram circle"></i></a>
+          <a href="javascript:void(0)" target="_blank" ceiboShare  [linkedIn]="{url:sAttributes.currentUrl, text:'Reading Room:'}"><i
+              class="fa fa-linkedin circle "></i></a>
+          <!-- <i class="fa  fa-google-plus circle google-icon"></i> -->
+        </div>
+        <p>Copy the link below:</p>
+        <input class="footer-email-input" value="http://demo1.writeawayy.com/blogs" type="url" [(ngModel)]="sAttributes.currentUrl" #blogUrl>
+        <button class="email-btn ftr_mail_button blogurltl" type="button" (click)="copyblogmessageUrl(blogUrl)" [class.alert-success]="sAttributes.inputElement">
+          <span *ngIf="!sAttributes.inputElement">Copy</span>
+          <span *ngIf="sAttributes.inputElement">Copyed!!</span>
+        </button>
+      </div>
+    </div>
+  </ng-template>
+
+
+  <ng-template #aboutUser>
+    <div class="auto_size">
+    <div class="user_views-popup">
+      <div class="user_pic">
+        <img src="/assets/images/pic.png" alt="">
+      </div>
+      <div class="name_rating">
+        <h2 *ngIf="sAttributes.userData && sAttributes.userData.user[0]">{{sAttributes.userData.user[0].firstName}} {{sAttributes.userData.user[0].lastName}}</h2>
+        <p *ngIf="sAttributes.age">({{sAttributes.age}} yrs.)</p>
+        <div class="ragin_starline"><ngx-star-rating [(ngModel)]="userRating" [id]="'user-rating'" ></ngx-star-rating ></div>
+      </div>
+      <div class="about_user">
+        <h3>About</h3>
+        <div class="full_detisls">
+          <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam,</p>
+        </div>
+        <div class="user_social">
+          <ul>
+            <li class="user-like-hover"><a href="javascript:void(0)"><img src="/assets/images/like.png" alt=""></a></li>
+            <li class="user-share-hover"><a href="javascript:void(0)"><img src="/assets/images/w-share.png" alt=""></a></li>
+            <li class="user-invite-hover"><a href="javascript:void(0)"><img src="/assets/images/flow.png" alt=""></a></li>
+            <li class="user-bookmark-hover"><a href="javascript:void(0)"><img src="/assets/images/book-right.png" alt=""></a></li>
+
+            <div class="like-tooltip">
+              <div class="bg_img">
+                <p><img src="assets/images/love-post.png" alt="" /> <span>100</span></p>
+              </div>
+            </div>
+            
+            <div class="share-tooltip">
+              <div class="bg_img share">
+                <p><img src="assets/images/share-icon.png" alt="" /> <span>100</span></p>
+              </div>
+            </div>
+            
+            <div class="invite-tooltip">
+              <div class="bg_img invite">
+                <p><img src="assets/images/invite.png" alt="" /> <span>100</span></p>
+              </div>
+            </div>
+            
+            
+            <div class="writer-tooltip">
+              <div class="bg_img writer">
+                <p><img src="assets/images/writer.png" alt="" /> <span>100</span></p>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </ng-template>
+
+
+
+  <ng-template #writeReview>
+    <div class="modal-body fd_bc">
+      <button type="button" class="close_km" aria-label="Close" (click)="socialShareClose()">
+        <span aria-hidden="true"><img src="../../../assets/images/cross.svg" /></span>
+      </button>
+      <div class="footer-modal">
+        <form role="form" [formGroup]="writeReviewForm">
+          <p class="heading_like">If you like what we do, we don’t mind you telling us about it!</p>
+          <textarea class="txt_area" placeholder="Enter your Feedback here." formControlName="review"
+          [ngClass]="{ 'is-invalid': sAttributes.submitted && f.review.errors }"></textarea>
+          <div class="send_bnt"><button class="send_bnt_vies" type="submit" (click)="sendFeedBack()">Send</button></div>
+          <div *ngIf="sAttributes.submitted && f.review.errors" class="custom_error">
+            <div class="errormsg" *ngIf="f.review.errors.required">review is required</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </ng-template>

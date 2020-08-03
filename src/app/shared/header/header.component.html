@@ -1,0 +1,632 @@
+<!-- Start Header -->
+<header id="header">
+  <div class="middle-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Header for main page -->
+        <div class="col-6 col-lg-6 col-md-6" *ngIf="!currentPage">
+          <div class="logo set_view">
+            <a><img src="assets/images/{{ logo }}" routerLink="/home" alt="logo" /></a>
+          </div>
+        </div>
+        <!-- Header for main page -->
+        <!-- Header for other page -->
+        <div class="col-6 col-lg-6 col-md-6" *ngIf="currentPage">
+          <div class="logo">
+            <a><img src="assets/images/{{ logo }}" routerLink="/home" alt="logo" /></a>
+          </div>
+        </div>
+        <!-- Header for other page -->
+         <!-- <div class="col-lg-6 col-md-1">
+          <div class="col-12">
+            <div class="col_form_area">
+              <div class="form-group">
+                <select name="subject" class="header-age-selecter" *ngIf="blogRoute">
+                  <option class="option" value="1">For Age 10-12 Years</option>
+                  <option class="option" value="1">For Age 10-14 Years</option>
+                  <option class="option" value="1">For Age 10-16 Years</option>
+                  <option class="option" value="1">For Age 10-18 Years</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <!-- <div class="col-lg-3"></div> -->
+        <div class="col-6 col-lg-6 col-md-6 right" *ngIf="!currentPage">
+          <div class="btn_area header_profile">
+          
+            <app-search-icon></app-search-icon>
+
+            <div class="btn_img updated-responsivess" *ngIf="!userLogin">
+              <a (click)="openModal(template)"><img src="./assets/images/LOGIN.png" /></a>
+
+              <a (click)="openModal(templateSignup)" class="cursor">
+                <img src="./assets/images/REG.png" class="align" /></a>
+            </div>
+            <div class="right-header btn_img updated-responsivess" style="float: right;" *ngIf="userLogin">
+              <img src="assets/images/publisher.svg" />
+              <div class="btn-group" dropdown>
+                <button id="button-basic" dropdownToggle type="button" class="dropdown-toggle myname_setting"
+                  aria-controls="dropdown-basic">
+                  {{ username }}
+                </button>
+                <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu drop_menu_user" role="menu" aria-labelledby="button-basic">
+                  <li role="menuitem">
+                    <a class="dropdown-item" routerLink="/user-profile/my-desk">My Desk</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-item" routerLink="user-profile/edit-profile">Edit Profile</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-item" routerLink="/change-password">Change Password</a>
+                  </li>
+                  <li class="divider dropdown-divider"></li>
+                  <li role="menuitem">
+                    <a class="dropdown-item" (click)="logout()">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-right right-header" *ngIf="currentPage">
+          <i class="fa fa-lg fa-search search-icon" aria-hidden="true"></i>
+          <select>
+            <option>View Options</option>
+            <option>Titles (A-Z/Z-A)</option>
+            <option>Date (UP/DOWN)</option>
+            <option>Reads (UP/DOWN)</option>
+            <option>Likes (UP/DOWN)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--/ End Header -->
+<!-- Login Modal -->
+<ng-template #template>
+  <div class="fff">
+    <div class="modal-body padding_no">
+      <div class="container-fluid">
+        <!-- <head -->
+        <div class="row create-acc-head">
+          <div class="col-md-4 left">
+            <div class="left">
+              <button type="button" class="close closepop-btn" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden="true"><img src="./assets/images/close-icon.png" /></span>
+              </button>
+            </div>
+            <h4 class="sign-updateds">Sign In</h4>
+          </div>
+          
+          <div class="col-md-8 right">
+            <span class="alred-reg not-reg-modal">Not yet Registered?</span>
+
+            <a (click)="decline(); openModal(templateSignup)">
+              <button class="sign-signup-btn sign-up-pop-col">
+                Sign Up
+              </button></a>
+          </div>
+        </div>
+
+        <!-- body -->
+
+        <div class="back-image">
+          <!-- form -->
+
+          <div class="row">
+            <div class="col-md-12 login-modal">
+              <div class="form-details">
+                <p class="input-names">Please enter your  login credentials below.</p>
+                <h6 class="headings-input-fields">Username</h6>
+                <form role="form" [formGroup]="loginForm">
+                  <input type="text" placeholder="Enter your Email ID" class="input-fields" formControlName="email"   [ngClass]="{ 'is-invalid': sAttributes.submitted && fv.email.errors }"/>
+
+                  <div *ngIf="sAttributes.submitted && fv.email.errors" class="custom_error">
+                   <div class="errormsg" *ngIf="fv.email.errors.required">Email is required</div>
+                    <div *ngIf="fv.email.errors.pattern">Email must be a valid email address</div>
+                </div>
+
+                  <h6 class="headings-input-fields">Password</h6>
+
+                  
+                  
+                  <input type="password" placeholder="Enter your Password" class="input-fields" formControlName="password" />
+                  <div *ngIf="fv.password.invalid && (f.password.dirty || sAttributes.submitted )" class="custom_error">
+                    <div class="errormsg " *ngIf="fv.password.errors.required">Oops! The Username and/or Password does not match. Please try again!</div>
+                </div>
+                <div class="padd-in_box">
+                  <div class="row">
+                   
+                     <div class="col-md-4 col-4 left">
+                      <p class="remeber-section">
+                        <span>
+                          <input type="checkbox" class="modal-check" (click)="setCookies()"
+                            formControlName="remember" /></span>
+                        <span class="headings-input-fields remmm">Remember Me
+                        </span>
+                      </p>
+                    </div>
+                    <div class="col-md-4 col-4 center">
+                      <!-- <button class="btn-signup">Submit</button> -->
+                      <button type="button " (click)="onSubmitLogin()" class="btn btn-signup">
+                        Sign In
+                      </button>
+                    </div>
+
+                    <div class="col-md-4 col-4 right">
+                      <a (click)="decline(); openModal(template_forgot_pass)">
+                        <h6 class="headings-input-fields forget-pass-login-modal change_font">
+                          Forgot Password
+                        </h6>
+                      </a>
+                   
+                  </div>
+                </div>
+                  </div>
+                </form>
+                <div class="form-details forget-heght" *ngIf="enableSignInOTP">
+                  <h6 class="">
+                    Enter OTP
+                  </h6>
+                  <div></div>
+                  <label class="input-names">Enter OTP</label>
+                  <input type="text" class="input-fields" [(ngModel)]="otp" /><br />
+                  <a (click)="sendEmail('resent', 'signup')">Resend</a>
+
+                  <div class="row">
+                    <div class="col-md-6 right">
+                      <button class="forget-cancl" (click)="decline()">
+                        Cancel
+                      </button>
+                    </div>
+                    <div class="col-md-6">
+                      <a><button class="btn-signup" (click)="verifySignUpOTP()">
+                          Verify
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!-- Login Modal -->
+<!-- Signup Modal -->
+<ng-template #templateSignup>
+  <div class="fff">
+    <div class="modal-body padding_no">
+      <div class="container-fluid">
+        <!-- <head -->
+        <div class="row create-acc-head">
+          <div class="col-md-6">
+            <div class="left">
+              <button type="button" class="close closepop-btn" aria-label="Close"
+                (click)="modalRef.hide(); enableEditUserInfo = false">
+                <span aria-hidden="true"><img src="./assets/images/close-icon.png"  class="close_bnt"></span>
+              </button>
+            </div>
+            <h4 class="sign-updateds">Create an Account</h4>
+          </div>
+          <div class="col-md-6 right mobile-res">
+            <span class="alred-reg not-reg-modal">Already Registered?</span>
+            <a (click)="decline(); openModal(template)"><button class="sign-signup-btn sign-up-pop-col">
+                Sign In
+              </button></a>
+          </div>
+        </div>
+
+        <!-- body -->
+
+        <div class="back-image">
+          <div class="row" *ngIf="!enableEditUserInfo">
+           <div class="main_form pading-set">
+            <div class="col-md-12">
+              <div class="date-picker">
+                <div class="row">
+            
+
+                  <div class="col-12">
+                    <span class="input-names updated-signupmod mod">
+                      Please select <span class="date_select_heading"> Date of Birth</span>  </span>
+                  
+                  </div>
+                  
+                </div>
+
+                <div class="">
+                  <div class="row select-dates caret-icons">
+                    <div class="col-4">
+                      <select class="birthdate" [(ngModel)]="selectedMonth" (change)="getDates()">
+                        <option value="" [selected]="true">Month</option>
+                        <option *ngFor="let month of months">{{
+                          month
+                        }}</option>
+                      </select><i class="fa fa-caret-down big" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="col-4">
+                      <select class="birthdate update-birthdate" [(ngModel)]="selectedDate">
+                        <option value="" selected>Date</option>
+                        <option *ngFor="let item of getDates()">{{
+                          item
+                        }}</option>
+                      </select>
+                      <i class="fa fa-caret-down big" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-4">
+                      <select class="birthdate update-birthdate" [(ngModel)]="selectedYear" (change)="calculateAge()">
+                        <option value="" selected>Year</option>
+                        <option *ngFor="let item of getYears()">{{
+                          item
+                        }}</option>
+                      </select><i class="fa fa-caret-down big" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+</div>
+          </div>
+
+          <div class="row" *ngIf="enableEditUserInfo">
+            <div class="col-md-12 login-modal">
+              <form role="form" [formGroup]="registerForm">
+                <div class="form-details" *ngIf="enableEditGuardianInfo">
+                  <h6 class="guardian_details  ">Please Enter Parent/Guardian details:</h6>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <select class="birthdate select_guarti select-guardian" formControlName="guardian" [ngClass]="{
+                          'is-invalid': submitted && f.guardian.errors
+                        }">
+                        <option value="" selected>Parent/Guardian</option>
+                        <option value="Father">Father</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Legal Guardian">Legal Guardian</option>
+                      </select> <i class="fa fa-caret-down big" aria-hidden="true"></i>
+                      <div *ngIf="submitted && f.guardian.errors" class="invalid-feedback">
+                        <div *ngIf="f.guardian.errors.required">
+                          Parent/Guardian is required
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                     
+                      <input placeholder="First/Middle Name" required type="text" class="input-fields set_divice" formControlName="guardianFirstName" [ngClass]="{
+                          'is-invalid': submitted && f.guardianFirstName.errors
+                        }" />
+                      <div *ngIf="submitted && f.guardianFirstName.errors" class="invalid-feedback">
+                        <div *ngIf="f.guardianFirstName.errors.required">
+                          Parent/Guardian First Name is required
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                     
+                      <input required type="text" placeholder="Last Name" class="input-fields set_divice" formControlName="guardianLastName" [ngClass]="{
+                          'is-invalid': submitted && f.guardianLastName.errors
+                        }" />
+                      <div *ngIf="submitted && f.guardianLastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.guardianLastName.errors.required">
+                          Parent/Guardian Last Name is required
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      
+                      <input required type="text" placeholder="Email ID" class="input-fields set_divice" formControlName="guardianEmail" [ngClass]="{
+                          'is-invalid': submitted && f.guardianEmail.errors
+                        }" />
+                      <div *ngIf="submitted && f.guardianEmail.errors" class="invalid-feedback">
+                        <div *ngIf="f.guardianEmail.errors.required"> Parent/Guardian Email is required </div>
+                        <div *ngIf="f.guardianEmail.errors.pattern"> Enter Valid Email Address </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                      <div class="center">
+                        <!-- <button class="btn-signup" type="button " (click)="onSubmit()" class="btn"
+                          [ngClass]="{ btn_disable: registerForm.invalid }" [disabled]="registerForm.invalid"
+                          *ngIf="enableEditGuardianInfo">
+                          Sign Up1
+                        </button> -->
+                        <button type="button " (click)="showUserForm()" class="btn btn-signup">
+                          {{ "Next" }}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form-second -->
+
+                <div class="form-details log-details" *ngIf="enableUserForm && !enableEditGuardianInfo">
+                  <h6 class="">Please enter your Login credentials:</h6>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      
+                      <input type="text" placeholder="First/Middle Name" class="input-fields set_divice" formControlName="firstName" [ngClass]="{
+                          'is-invalid': submitted && f.firstName.errors
+                        }" />
+                      <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                        <div *ngIf="f.firstName.errors.required">
+                          First Name is required
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                     
+                      <input type="text" placeholder="Last Name" class="input-fields set_divice" formControlName="lastName" [ngClass]="{
+                          'is-invalid': submitted && f.lastName.errors
+                        }" />
+                      <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.lastName.errors.required">
+                          Last Name is required
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+            <input type="text"  placeholder="Email ID" class="input-fields set_divice" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"/>
+
+                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email ID  is required</div>
+                    <div *ngIf="f.email.errors.pattern"> Enter valid Email ID. </div>
+
+
+                  </div>
+
+                 
+                  <input type="password" placeholder="Set Password" class="input-fields set_divice" formControlName="password"
+                    [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                  <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">
+                      Password do not match.
+                    </div>
+                  </div>
+
+               
+                  <input type="password" placeholder="Reconfirm Password" class="input-fields set_divice" formControlName="confirmPassword" [ngClass]="{
+                      'is-invalid': submitted && f.confirmPassword.errors
+                    }" />
+
+                  <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                    <div *ngIf="f.confirmPassword.errors.required">
+                      Confirm Password is required
+                    </div>
+                    <div *ngIf="f.confirmPassword.errors.mustMatch">
+                      Passwords must match
+                    </div>
+                  </div>
+
+                  <div class="center footer-updates">
+                    <span id="yes">Keep me posted with offers/updates etc</span>
+                    <input type="radio" class="radio-btns" id="yes" value="1" formControlName="acceptOffer" [ngClass]="{
+                        'is-invalid': submitted && f.acceptOffer.errors
+                      }" />
+                    <span id="no"> Yes</span>
+                    <input type="radio" class="radio-btns" id="no" value="0" formControlName="acceptOffer" [ngClass]="{
+                        'is-invalid': submitted && f.acceptOffer.errors
+                      }" />
+                    <span> No</span>
+                    <div *ngIf="submitted && f.acceptOffer.errors" class="invalid-feedback">
+                      <div class="erro_tikc_offer" *ngIf="f.acceptOffer.errors.required">
+                        Please tick the offers
+                      </div>
+                    </div>
+                    <div class="row terms-fix-pad">
+                      <div class="col-2 right-alig p-0">
+                        <!-- <pre>{{registerForm | json}}</pre> -->
+                        <input type="checkbox" class="check-btms chk-fix-22" formControlName="acceptTerms" [ngClass]="{
+                            'is-invalid': submitted && f.acceptTerms.errors
+                          }" />
+                        <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback errors-chk-fix">
+                          <div class="erro_tikc_offer" *ngIf="f.acceptTerms.errors">
+                            Acceptance is compulsory.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-10 left-alig">
+                        <span>I accept the </span>
+                        <span class="col-yel">Terms of Use &amp; Legal Policies</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="center">
+                    <!-- <button class="btn-signup" type="button " (click)="onSubmit()" class="btn"
+                      [ngClass]="{ btn_disable: registerForm.invalid }" [disabled]="registerForm.invalid"
+                      *ngIf="enableEditGuardianInfo">
+                      Sign Up1
+                    </button>
+                    <button type="button " (click)="adultUser ? onSubmit() : enableGuardianForm()"
+                      class="btn btn-signup">
+                      {{ adultUser ? "Sign Up2" : "Next" }}
+                    </button> -->
+                    <button class="btn-signup" (click)="onSubmit()">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class="form-details forget-heght" *ngIf="enableSignOTP">
+               <div *ngIf="enableSignOTP; then addOTPTemp"></div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!-- Signup Modal -->
+
+<!-- <forgot-pass Modal -->
+<ng-template #template_forgot_pass>
+  
+  <div class="modal-body padding_no">
+
+    <div class="container-fluid">
+      <!-- <head -->
+      <div class="row create-acc-head">
+        <div class="col-md-12">
+          <div class="left">
+            <button type="button" class="close closepop-btn" aria-label="Close"
+              (click)="modalRef.hide(); enableEditUserInfo = false">
+              <span aria-hidden="true"><img src="./assets/images/close-icon.png" /></span>
+            </button>
+          </div>
+          <h4 class="sign-updateds">Forgot your Password? No Problem!</h4>
+        </div>
+      </div>
+
+      <!-- body -->
+
+      <div class="back-image">
+        <!-- form -->
+
+        <div class="row">
+          <div class="col-md-12 forget-popup">
+            <div class="form-details forget-heght" *ngIf="!emailSend && !enablePassword">
+              <h6 class="forgot-heading_views">
+                Enter your Email ID as registered:
+              </h6>
+              <form role="form" [formGroup]="forgetpassword">
+
+       
+              <input type="text" placeholder="Enter your registered Email ID" class="input-fields" formControlName="email" [ngClass]="{'is-invalid': sAttributes.rpsubmitted && fp.email.errors}"/>
+              <div *ngIf="sAttributes.rpsubmitted && fp.email.errors" class="invalid-feedback">
+                <div class="worng_msg" *ngIf="fp.email.errors.required">No registration found. please enter correct Email ID as registered.</div>
+                <div *ngIf="fp.email.errors.pattern">enter valid email address</div>
+              </div>
+              
+              
+              
+            
+              <label class="input-names italic file_forgot_pwd">An OTP to reset the Password shall be sent to the above Email ID.</label>
+
+              <div class="row">
+                <div class="col- col-sm-12 col-md-12 col-lg-12 col-xl-12 center_point">
+                  <div class="tow_bnt_view-forgot">
+                  <button type="button" class="forget-cancl bnt_chnage" (click)="decline()">
+                    Cancel
+                  </button>
+                  <button type="button" class="forget-cancl bnt_chnage bg_sign_two" (click)="decline()">
+                    Send
+                  </button>
+                
+                </div>
+                </div>
+               
+              </div>
+              </form>
+              <!-- <label class="input-names">A link to reset Password shall be sent to the Email ID</label>-->
+            </div>
+            <!-- After email send -->
+            <div class="form-details forget-heght" *ngIf="emailSend && !enablePassword">
+               <div *ngIf="emailSend; then addOTPTemp"></div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            </div>
+            <div class="form-details forget-heght" *ngIf="emailSend && enablePassword">
+              <h6 class="" *ngIf="!sAttributes.resetSuccess">reset your new password below.</h6>
+              <form [formGroup]="resetPasswordForm" *ngIf="!sAttributes.resetSuccess">
+                <input type="password" placeholder="set new password" class="input-fields" formControlName="password" [ngClass]="{'is-invalid': sAttributes.resetPasswordubmitted && rp.password.errors}" />
+                <div *ngIf="sAttributes.resetPasswordubmitted && rp.password.errors" class="invalid-feedback">
+                  <div *ngIf="rp.password.errors.required">Password is required</div>
+                </div>
+                <!-- <label class="input-names">Enter Password</label> -->
+                <input type="password" placeholder="Reconfirm password" class="input-fields" formControlName="confirmpassword" [ngClass]="{'is-invalid': sAttributes.resetPasswordubmitted && rp.confirmpassword.errors}" />
+                <div *ngIf="sAttributes.resetPasswordubmitted && rp.confirmpassword.errors" class="invalid-feedback">
+                  <div *ngIf="rp.confirmpassword.errors.required">Password is required</div>
+                  <div *ngIf="rp.confirmpassword.errors.mustMatch">Passwords must match </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-md-6 right">
+                    <button type="button" class="forget-cancl" (click)="decline()">Cancel </button>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="submit" class="btn-signup" (click)="updatePassword()">Update</button>
+                  </div>
+                 </div>
+                </form>
+              <div *ngIf="sAttributes.resetSuccess">
+                  <p>Yay!</p>
+                  <p>Your New password has been successfully reset.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ng-template>
+<!-- <end-forgot-pass Modal -->
+
+
+   <ng-template #addOTPTemp>
+    <div class="content">
+      <div class="o-c">
+        <div>
+          <div class="card info-formeting" *ngIf="!sAttributes.otpSuccess">
+            <p class="a-o-i" *ngIf="!emailSend">Thanks you for registering with us!</p>
+            <p class="a-o-i" *ngIf="!emailSend">An <strong>OTP</strong> has been sent to your email address.</p>
+             <p class="a-o-i" *ngIf="!emailSend">Please enter the same below to activate your account.</p>
+             <p class="a-o-i" *ngIf="emailSend">We have sent an OTP to your registered Email ID.</p>
+             <p  class="a-o-i" *ngIf="emailSend">Please enter the same below to reset your password</p>
+             
+             <p class="errormsg" *ngIf="sAttributes.otpWrong" class="custom_error">You have entered the wrong <strong>OTP</strong>. please re-enter correct <strong>OTP</strong> as received. Thank you.</p>
+            <div class="otp_design_box"><ng-otp-input #ngOtpInput (onInputChange)="onOtpChange($event)" *ngIf="showOtpComponent" [config]="config"></ng-otp-input>
+            </div>
+              <!-- <span *ngIf="otp" class="o-t-p">Entered otp :-{{otp}}</span> -->
+            <p class="no_yet">Not yet received the  <strong class="bot_bold">OTP</strong>. <a href="javascript:void(o)" class="set_re_otp" (click)="reSendOtp()">Resend</a></p>
+          </div>
+          <div class="card" *ngIf="sAttributes.otpSuccess && !emailSend">
+            <p>Yay!</p>
+            <p> Your email address has been successfully confirmed.</p>
+            <button type="button" class="btn btn-signup">Sign In </button>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </ng-template>
+
+
+<ng-template #badge>
+    <div class="modal-header">
+      <button type="button" class="close pull-right" (click)="tAndCClose()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      terms and conditions conten
+    </div>
+</ng-template>

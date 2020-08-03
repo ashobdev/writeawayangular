@@ -1,0 +1,327 @@
+/* logo button */
+.logo-btn {
+  background-color: #d43299;
+  color: white;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+}
+
+/* logo button */
+.pad-zero-profile {
+  padding: 0% !important;
+}
+
+.mar-zero {
+  margin: 0 !important;
+}
+
+.my-desk-heading {
+  padding-left: 14px;
+  font-weight: 600;
+  font-size: 22px;
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.my-desk-heading-name {
+  color: black;
+}
+
+.color-pink {
+  color: #d43299 !important;
+}
+
+.col-blue {
+  color: #1ca9c9;
+}
+
+.table-header {
+  background-color: #3b9bf1;
+  color: white;
+  padding-top: 14px;
+}
+
+.table-header p {
+  border-right: 1px solid white;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.background-light-blue {
+  background-color: #effdfe !important;
+}
+
+.background-light-pink {
+  background-color: #fdf7fb !important;
+}
+
+.color-blues {
+  color: #3b9bf1;
+  text-decoration: underline !important;
+}
+
+.rounded-div {
+  padding: 11px 18px;
+  margin: 9px 0;
+  border: 6px solid #ffffff;
+  border-radius: 37px;
+}
+
+.align-bookimg {
+  position: absolute;
+  margin-left: -21px;
+  /* vertical-align: middle; */
+  margin-top: 11px;
+}
+
+.clr1 {
+  color: skyblue;
+}
+
+.left-icons-multiple {
+  border-top: 1px solid !important;
+}
+
+.align-reads {
+  margin-left: 6px;
+}
+
+.clr2 {
+  color: red;
+}
+
+.align-reads {
+  margin-left: 6px;
+}
+
+.star-icon {
+  color: gold;
+  font-size: 10px !important;
+  margin-top: 6px;
+}
+
+.open-btn {
+  background-color: #d43299;
+  border: 0;
+  color: white;
+  padding: 4px;
+  min-width: 72px;
+  max-width: 72px;
+  border-radius: 18px;
+}
+
+.color-blue {
+  background-color: #3b9bf1;
+}
+
+.parts {
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 15px;
+}
+
+.col-gray-part {
+  color: black;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.edit-form-align {
+  padding: 4px 0px 15px 16px;
+  border-bottom: 4px solid white;
+}
+
+.background-light-pink {
+  background-color: #fdf7fb !important;
+}
+
+.field-size span {
+  font-size: 9px;
+  position: relative;
+  top: 12px;
+  left: 11px;
+  background-color: white;
+  color: #219ad3;
+  font-weight: 600;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.field-size input {
+  font-size: 10px;
+  padding-left: 4px;
+  display: flex;
+  width: 100%;
+  padding: 7px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #219ad3;
+  font-size: 12px;
+}
+
+.select-one {
+  width: 100%;
+}
+
+.field-size label {
+  font-size: 9px;
+  margin-top: 4px;
+}
+
+.pad-20 {
+  padding-top: 20px;
+  padding-left: 0px !important;
+}
+
+.field-size textarea {
+  font-size: 10px;
+  padding-left: 4px;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #219ad3;
+}
+
+.pad-top-btns {
+  padding-top: 40px;
+}
+
+.update-edit {
+  background-color: #219ad3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 30px 9px 30px !important;
+}
+
+.cancl-btn-edit {
+  background-color: #f0f7ff;
+  padding: 9px 22px 9px 22px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #707174;
+}
+
+.field-size select {
+  font-size: 10px;
+  padding-left: 4px;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #219ad3;
+}
+
+.left-bar-btmss {
+  display: inline-block;
+  padding: 5px;
+  color: #219ad3 !important;
+}
+
+.add-social {
+  display: inline-block;
+  font-style: italic;
+  color: lightgray;
+  margin-top: 7px !important;
+  padding-left: 40px;
+  font-weight: 300;
+  font-size: 14px;
+  padding-left: 160px;
+}
+
+.display-this {
+  font-style: italic;
+  padding-top: 38px;
+  font-weight: 300;
+  font-size: 12px;
+  color: black !important;
+}
+
+.radio-cont {
+  padding-left: 20px;
+}
+
+.first-rad {
+  float: left;
+}
+
+.first-rad label {
+  padding-top: 28px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.profile-radio {
+  width: 10px !important;
+  margin: 0 !important;
+  float: left;
+  margin-top: 39px !important;
+}
+
+.second-rad {
+  padding-left: 120px;
+}
+
+.second-rad label {
+  padding-top: 28px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.about-me-textarea {
+  padding-bottom: 30px !important;
+}
+
+.parent-g-detail {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: black !important;
+}
+
+.parent-g-detail p {
+  color: black !important;
+}
+
+.so-icons p {
+  color: black !important;
+  font-size: 20px;
+}
+
+.address-2 {
+  margin-top: 8px;
+}
+
+/* media query  */
+@media screen and (max-width: 767px) {
+  .radio-cont {
+    padding: 0% !important;
+  }
+
+  .display-this {
+    padding-top: 27px;
+  }
+
+  .first-rad label {
+    padding-top: 0;
+  }
+
+  .second-rad label {
+    padding-top: 0;
+  }
+
+  .profile-radio {
+    margin-top: 10px !important;
+  }
+}

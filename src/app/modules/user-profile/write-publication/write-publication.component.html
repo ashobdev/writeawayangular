@@ -1,0 +1,491 @@
+<div class="container-fluid">
+  <!-- header -->
+
+  <div class="row pad-zero">
+
+    <div class="col-md-3 pad-zero">
+      <button type="button" class="logo-btn">We're Publishing!</button>
+    </div>
+
+    <div class="col-md-9 right-header text-center">
+      <p>
+        <!--Write on this-->
+      </p>
+      <!-- <div class="my-desk-heading background-light-pink">
+        <p> <span class="color-pink">He</span>llo! Ricky <span class="col-blue">{{count || 0}}</span></p>
+
+      </div> -->
+    </div>
+
+  </div>
+</div>
+<div class="container-fluid" *ngIf="!data">
+  <div class="row">
+    <div class="col-md-3" style="display: none;">
+      <app-user-sidebar [display]="false"></app-user-sidebar>
+    </div>
+    <div class="col-md-12">
+
+      <div class="main-body">
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-8 right-pink-head">
+            <p class="novelists-approach">ONE NOVELIST'S APPROACH</p>
+            <p class="novelists-approach">ELIZABETH GEORGE</p>
+          </div>
+        </div>
+
+        <div class="row back-light-blue description-container">
+          <div class="col-md-5 write-away-img">
+            <img src="./assets/images/read-away-publish.jpg">
+
+            <div class="text-center">
+
+
+              <div class="left-sec-name">
+                <img class="prof-imgss" src="./assets/images/w.png">
+                <p class="publisher-name">Daniel</p>
+                <p class="publisher-name">Age Groups <span class="col-grey">8-14 years</span></p>
+                <p class="publisher-name">Word Count<span class="col-grey">Upto 300 Words</span></p>
+                <p class="publisher-name">Closing Date<span class="col-grey">June 10,2019</span></p>
+
+
+              </div>
+              <div class="row names-icons">
+                <div class="col-6 ">
+                  <i class="fa fa-share share-eco-editor"></i> <span>Shares</span>
+                </div>
+                <div class="col-6">
+                  <i class="fa fa-bookmark-o col-redss"></i> <span>Bookmarks</span>
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+          <div class="col-md-7">
+            <p class="description-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus,
+              nemo fugit, explicabo nihil blanditiis vel placeat aperiam facere esse
+              eligendi sequi et nulla repudiandae asperiores repellat magnam! Quod
+              exercitationem id dolore culpa hic earum voluptates nam odio expedita
+              vitae necessitatibus facere quaerat autem porro voluptatum, aliquam
+              soluta aspernatur explicabo perferendis, est consectetur laborum?
+              Perspiciatis corrupti quasi fuga quis aliquid explicabo dolores,
+              architecto et impedit sit, maxime magnam dolore doloribus delectus iste,
+              vel quia. Quia, repudiandae dicta! Temporibus obcaecati excepturi blanditiis
+              nobis fuga atque aspernatur quisquam delectus soluta eos? Esse pariatur quo
+              libero alias deserunt, sunt rerum quisquam facilis recusandae sapiente.
+              vel quia. Quia, repudiandae dicta! Temporibus obcaecati excepturi blanditiis
+              nobis fuga atque aspernatur quisquam delectus soluta eos? Esse pariatur quo
+              libero alias deserunt, sunt rerum quisquam facilis recusandae sapiente.</p>
+            <div class="row buttons-editor">
+              <div class="col-6"><button>Kick Starter</button></div>
+              <div class="col-6 text-right"><button>Your 'How-To' Book</button></div>
+
+            </div>
+            <div class="notes">
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Editor -->
+
+        <app-editor [data]="editorData" (editorContent)="getContent($event)"></app-editor>
+
+        <!-- buttons -->
+
+        <div class="text-center my-btns">
+          <button type="button" class="btn btn-cancel">Cancel</button>
+          <button type="button" class="btn btn-save">Save</button>
+          <button type="button" class="btn btn-send">Send for Publishing</button>
+        </div>
+
+        <!-- Sliders -->
+        <!--<div class="container">
+        <h4 class="load-more">Load More...</h4> -->
+        <!-- <div class="carousel-cont">
+          <div class="carousel-headings text-center">
+            <p> <span class="color-pink">Su</span>ggested Publishing</p>
+          </div>
+          <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="false"
+            [indicatorsByChunk]="true">
+            <slide *ngFor="let slide of slides; let index=index" class="slider-cont">
+              <div class="row">
+                <div class="col-md-4">
+                  <img [src]="slide.image" alt="image slide" class="slider-img">
+                </div>
+                <div class="col-md-8 text-justify">
+                  <h6 class="novel-title">ONE NOVELIST'S APPROACH ELISABETH GEORGE</h6>
+                  <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                    elit.Impedit debitis doloremque at quos non officiis.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="carousel-caption">
+                 <p>- John Doe</p>
+                    <span class="firm_name">ABC Company</span> 
+              </div>
+            </slide>
+          </carousel>
+        </div>
+        <div class="carousel-cont">
+          <div class="carousel-headings text-center">
+            <p> <span class="color-pink">Yo</span>ur Followings</p>
+          </div>
+          <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="false"
+            [indicatorsByChunk]="true">
+            <slide *ngFor="let slide of slides; let index=index" class="slider-cont">
+              <div class="row">
+                <div class="col-md-4">
+                  <img [src]="slide.image" alt="image slide" class="slider-img">
+                </div>
+                <div class="col-md-8 text-justify">
+                  <h6 class="novel-title">ONE NOVELIST'S APPROACH ELISABETH GEORGE</h6>
+                  <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                    elit.Impedit debitis doloremque at quos non officiis.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="carousel-caption">
+              </div>
+            </slide>
+          </carousel>
+        </div>
+        <div class="carousel-cont">
+          <div class="carousel-headings text-center">
+            <p> <span class="color-pink">Yo</span>ur Recent Writing Selections</p>
+          </div>
+          <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="false"
+            [indicatorsByChunk]="true">
+            <slide *ngFor="let slide of slides; let index=index" class="slider-cont">
+              <div class="row">
+                <div class="col-md-4">
+                  <img [src]="slide.image" alt="image slide" class="slider-img">
+                </div>
+                <div class="col-md-8 text-justify">
+                  <h6 class="novel-title">ONE NOVELIST'S APPROACH ELISABETH GEORGE</h6>
+                  <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                    elit.Impedit debitis doloremque at quos non officiis.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="carousel-caption">
+                 <p>- John Doe</p>
+                    <span class="firm_name">ABC Company</span>\
+              </div>
+            </slide>
+          </carousel>
+        </div>-->
+      </div>
+
+      <!-- Sliders -->
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid" *ngIf="data">
+  <div class="row">
+    <div class="col-md-3" style="display: none;">
+      <app-user-sidebar [display]="false"></app-user-sidebar>
+    </div>
+    <div class="col-md-12">
+
+      <div class="main-body">
+
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-7 right-pink-head">
+            <p class="novelists-approach">{{data['title']}}</p>
+            <!-- <p class="novelists-approach">{{ data['publishedBy'] | titlecase }}</p> -->
+          </div>
+        </div>
+
+        <div class="row back-light-blue description-container">
+          <div class="col-md-5 write-away-img">
+            <div class="img_wpb">
+              <img src="{{url}}/images/{{data['mediaCover']}}">
+            </div>
+
+            <div class="box_blg_half_second5">
+
+            </div>
+
+            <div class="box_blg_half_second">
+              <div class="box_blg_half_icon_wd_second">
+                <a href="#">
+                </a>
+                <a href="#">
+                  <img alt="" src="assets/images/share_icon.png" />
+                </a>
+                <a href="#">
+                  <img alt="" src="assets/images/book_icon3.png" />
+                </a>
+              </div>
+            </div> 
+            
+            <div class="text-right">
+              <!--<i class="fa fa-share col-blue share-icons" (click)="openShareModal(socialMedia,data._id)"></i>
+              <i class="fa col-yel bokyy book_mark_link" [ngClass]="
+              publicationBookMarkStatus(
+                data.bookmark
+              )
+            " (click)="
+                    data.bookmark.length || data.bookmark.bookMarkStatus == '0'
+                      ? updatePublicationBookMark(
+                         data.bookmark
+                        )
+                      : savePublicationBookMark(
+                          data.bookmark
+                        )
+                  "></i>-->
+            </div>
+
+            <div class="text-center">
+              <div class="left-sec-name">
+                <div class="publi_nm_img">
+                  <p class="publisher-name publisher-name1">Publisher:</p>
+                  <img class="prof-imgss prof-imgss1" src="./assets/images/w.png">
+                  <p class="publisher-name publisher-name2">{{ data && data['publishedBy'] || 'Admin'}}</p>
+                </div>
+                
+                <div class="publi_nm_img">
+                  <p class="publisher-name">Age Groups:
+                    <span *ngFor="let age of data.ageGroup;let i = index" class="col-grey">
+                      {{age.ageRange.join('-')}}
+                      years
+                      <span *ngIf="i == data.ageGroup.length - 1"></span>
+                      <span *ngIf="i != data.ageGroup.length - 1">,</span>
+                    </span>
+                    <!-- {{data && data['ageGroup'] && data['ageGroup']['ageRange'].join('-')}} -->
+                  </p>
+                  <p class="publisher-name">Word Count:<span
+                      class="col-grey">{{data && data['wordCount'] && data['wordCount'].join('-')}}
+                      words</span></p>
+                  <p class="publisher-name">Closing Date:<span
+                      class="col-grey">{{ data && data['closingDate'] | date : 'MMM dd, yyyy'}}</span></p>
+                </div>
+                
+              </div>
+              <div class="row names-icons" style="display: none;">
+                <div class="col-6 ">
+                  <i class="fa fa-share share-eco-editor"></i> <span>Shares</span>
+                </div>
+                <div class="col-6">
+                  <i class="fa col-redss" [ngClass]="
+                  publicationBookMarkStatus(
+                    data
+                  )
+                " (click)="
+                  openPublications.length &&
+                  openPublications[openPublicationIndex] &&
+                  openPublications[openPublicationIndex].bookmark
+                    ? updatePublicationBookMark(
+                        data
+                      )
+                    : savePublicationBookMark(
+                        data
+                      )
+                "></i>
+                  <span>Bookmarks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p class="description-p" [innerHTML]="data['categoryContent']">
+            </p>
+            <p class="publisher-name" *ngFor="let genre of data.genres;let i=index">Genres:
+              <span class="col-grey">{{ genre.title }}<br />
+                <!-- <span *ngIf="i==data.genres.length-1"></span>
+                <span *ngIf="i!=data.genres.length-1">,</span> -->
+                <span>{{data.genreDescription[i]}} </span><br />
+              </span>
+            </p>
+            <div class="row buttons-editor">
+              <div class="col-6">
+                <button (click)="kickInfo('starter')">Kick Starter</button>
+              </div>
+              <div class="col-6 text-right">
+                <button (click)="kickInfo('book')">Your 'How-To' Book</button>
+              </div>
+
+            </div>
+            <div class="notes" [innerHTML]="kickStartInfo">
+
+            </div>
+          </div>
+        </div>
+        <!-- Editor -->
+        <div class="row">
+          <!-- <div class="col-lg-2 col-sm-2">
+            <div class="media-upload" (click)="openModal(genreMedia)">Upload Media
+            </div>
+          </div> -->
+          <div class="col-lg-12 col-sm-12">
+            <form role="form" [formGroup]="submissionForm">
+              <input type="text" class="topic" placeholder="Enter Topic" formControlName="topic"  [ngClass]="{'is-invalid': sAttributes.submitted && f.topic.errors}"/>
+              <div *ngIf="sAttributes.submitted && f.topic.errors" class="invalid-feedback">
+                <div *ngIf="f.topic.errors.required">Topic is required</div>
+              </div>
+              <!-- <app-editor [data]=" editorData" (editorContent)="getContent($event)"></app-editor> -->
+              <angular-editor formControlName="content" [config]="config" [ngClass]="{'is-invalid': sAttributes.submitted && f.content.errors}"></angular-editor>
+              <div *ngIf="sAttributes.submitted && f.content.errors" class="invalid-feedback">
+                <div *ngIf="f.content.errors.required">Content is required</div>
+<!--                 <div *ngIf="f.content.errors.minLength">Content must be at least 2 characters</div>
+                <div *ngIf="f.content.errors.maxLength">Content max 15 characters </div> -->
+              </div>
+            </form>
+            <div class="col-md-12 text-center my-btns mt-3">
+              <button type="button" class="btn btn-cancel mr-3">Cancel</button>
+              <!-- <button type="button" class="btn btn-save" (click)="onSubmit()">Save</button> -->
+              <button type="button" class="btn btn-send" (click)="onSubmit('publish')">Send for Publishing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sliders -->
+<!--<div class="container">
+  <h4 class="load-more">Load More...</h4> 
+  <div class="carousel-cont" *ngIf="suggestedPublication.length>0">
+    <div class="carousel-headings text-center">
+      <p> <span class="color-pink">Su</span>ggested Publishing</p>
+    </div>
+    <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="true"
+      [indicatorsByChunk]="true">
+      <slide *ngFor="let slide of suggestedPublication; let index=index" class="slider-cont">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{url}}/images/{{slide.media142}}" alt="image slide" class="slider-img">
+          </div>
+          <div class="col-md-8 text-justify">
+            <h6 class="novel-title">{{ slide.title }}</h6>
+            <p class="text-justify" [innerHTML]="getBrief(slide.brief)"> {{ slide.brief }}
+            </p>
+          </div>
+
+        </div>
+
+        <div class="carousel-caption">
+           <p>- John Doe</p>
+            <span class="firm_name">ABC Company</span> 
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="carousel-cont">
+    <div class="carousel-headings text-center">
+      <p> <span class="color-pink">Yo</span>ur Followings</p>
+    </div>
+    <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="false"
+      [indicatorsByChunk]="true">
+      <slide *ngFor="let slide of following; let index=index" class="slider-cont">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{url}}/images/{{slide.publicationId.media142}}" alt="image slide" class="slider-img">
+          </div>
+          <div class="col-md-8 text-justify">
+            <h6 class="novel-title">{{ slide.publicationId.title }}</h6>
+            <p class="text-justify" [innerHTML]="getBrief(slide.publicationId.brief)"> {{ slide.publicationId.brief }}
+            </p>
+          </div>
+
+        </div>
+
+        <div class="carousel-caption">
+
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="carousel-cont">
+    <div class="carousel-headings text-center">
+      <p> <span class="color-pink">Yo</span>ur Recent Writing Selections</p>
+    </div>
+    <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false" [interval]="false" [noWrap]="false"
+      [indicatorsByChunk]="true">
+      <slide *ngFor="let slide of recentWriting; let index=index" class="slider-cont">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{url}}/images/{{slide.publicationId.media142}}" alt="image slide" class="slider-img">
+          </div>
+          <div class="col-md-8 text-justify">
+            <h6 class="novel-title">{{ slide.publicationId.title }}</h6>
+            <p class="text-justify" [innerHTML]="getBrief(slide.publicationId.brief)"> {{ slide.publicationId.brief }}
+            </p>
+          </div>
+
+        </div>
+
+        <div class="carousel-caption">
+
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>-->
+
+<!-- Sliders -->
+<ng-template #genreMedia>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Select Upload media Images</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="text-center mb-3" *ngFor="let genre of data['genres']">
+      <div *ngFor="let row of genre.topicMedia">
+        <img style="float: left;" class="img-responsive img-fluid mb-2" src="{{url}}/images/{{row}}" />
+        <button class="btn btn-primary" (click)=" mediaAvailable.includes(row) ? removeMedia(row) : addToMedia(row)">
+          {{ mediaAvailable.includes(row) ? 'Remove': 'Select this Genre Image' }} </button>
+      </div>
+
+    </div>
+  </div>
+</ng-template>
+<ng-template #socialMedia>
+  <div class="modal-body">
+    <span class="close">×</span>
+    <div class="icon5" style="margin-bottom: 32px;">
+      <h6 style="text-align: left;font-size: 11px;font-weight: 600;color: #777575;">Share On social media</h6>
+      <a (click)="blogShareLink('facebook')"><i class="fa  fa-facebook circle5"></i></a>
+      <a (click)="blogShareLink('instagram')"><i class="fa  fa-instagram circle5"></i></a>
+      <a (click)="blogShareLink('linkedin')"><i class="fa  fa-linkedin circle5 "></i></a>
+      <a (click)="blogShareLink('google+')"><i class="fa  fa-google-plus circle5"></i></a>
+      <a (click)="blogShareLink('youtube')"><i class="fa  fa-youtube circle5 "></i></a>
+      <a (click)="blogShareLink('twitter')"><i class="fa  fa-twitter circle5" style="margin-top: -6px;"></i></a>
+    </div>
+
+    <div style="width: 100%; float: left;">
+      <h6 style="text-align: left;font-size: 11px;font-weight: 600;color: #777575;">Copy Link</h6>
+      <input type="text" [(ngModel)]="copiedLink" id="myInput"
+        style="width: 80%;float: left;background: #effdfe;border: none;border-radius: 18px;">
+      <button (click)="blogShareLink('site')"
+        style="width: 20%;float: left;background: #effdfe;border: none;border-radius: 18px;box-shadow: none;border: none;"><img
+          src="/assets/images/link.png"></button>
+    </div>
+
+  </div>
+</ng-template>

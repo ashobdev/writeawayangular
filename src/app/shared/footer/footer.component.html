@@ -1,0 +1,150 @@
+<div class="clearfix"></div>
+<footer class="my-footer">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="assets/images/footer-logo.svg" class="footer-logo footer-logo1" width="360px">
+    </div>
+
+    <div class="col-lg-2 col-sm-12">
+      <div class="row">
+
+        <div class="footer-icon-one col-lg-12 col-sm-6">
+          <p class="left-icon-head ">Follow/Share:</p>
+          <div class="social-icons">
+            <a href="http://www.facebook.com/writeawayystory" target="_blank"> <i
+                class="fa fa-facebook circle "></i></a>
+            <a href="http://www.instagram.com/writeawayystory" target="_blank"><i
+                class="fa fa-instagram circle"></i></a>
+            <a href="http://www.linkedin.com/in/writeawayystory" target="_blank"><i
+                class="fa fa-linkedin circle "></i></a>
+            <!-- <i class="fa  fa-google-plus circle google-icon"></i> -->
+          </div>
+        </div>
+<!--         <div class="footer-icon-two col-lg-12 col-sm-6">
+          <p class="left-icon-head">Get our app:</p>
+          <i class="fa  fa-apple circle " aria-hidden="true"></i>
+          <i class="fa  fa-android circle " aria-hidden="true"></i>
+        </div> -->
+      </div>
+    </div>
+
+
+    <div class="col-lg-6 col-sm-12 updated-align-fot row">
+
+
+
+
+      <div class="row book-img-conts responsive-footer book-img-conts added-footer">
+
+
+        <div class="col-md-8">
+          <p>Stay Updated:</p>
+          <form role="form" [formGroup]="newsNewsletterForm">
+            <input type="email" class="footer-email-input" placeholder="Enter your Email Address here" formControlName="email"
+              [ngClass]="{ 'is-invalid': sAttributes.submitted && f.email.errors }" />
+            <button type="submit" class="email-btn ftr_mail_button" (click)="sendNesLatter()">Subscribe</button>
+            <div *ngIf="sAttributes.submitted && f.email.errors" class="custom_error">
+              <div class="errormsg" *ngIf="f.email.errors.required">Email is required</div>
+              <div *ngIf="f.email.errors.pattern">Email must be a valid email address</div>
+            </div>
+          </form>
+          
+          
+            <p class="set_ww_P">We would love to hear from you:</p>
+  
+            <div class="footr-icon">
+              <a (click)="openFbModal(feedback)"><img src="../../../assets/images/2.png" />
+                <span>Feedback</span></a>
+              <a (click)="openTmModal(testimonial)"><img src="../../../assets/images/12.png" />
+                <span>Testimonials</span></a>
+              <a (click)="openModal(contact)"><img src="../../../assets/images/3.png" /> <span>Contact Us</span></a>
+            </div>
+  
+          
+        </div>
+
+        <div class="col-md-1"></div>
+        <div class="col-md-3 pt-4">
+          <ul class="res-fot">
+           <a  routerLink="/about-us"><li>About Us</li></a>
+            <a routerLink="/terms" class="set_mrg"><li>Terms of Use &amp; <span class="ftr_link">Legal Policies</span> </li></a>
+          </ul>
+        </div>
+
+
+       
+
+
+      </div>
+    </div>
+    <!-- <p class="copyright">Copyright © 2020 Property Agent.All rights reserved.</p> -->
+  </div>
+</footer>
+
+<div class="footer-copyright text-center py-3">© 2020 
+  <a href="javascript:void(0)" routerLink="/home"> WriteAwayy.com.</a> All Rights Reserved
+</div>
+
+<ng-template #feedback>
+  <!-- <div class="modal-header">
+    <h4 class="modal-title pull-left">FeedBack</h4>
+    
+  </div> -->
+  <div class="modal-body fd_bc">
+    <button type="button" class="close_km" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true"><img src="../../../assets/images/cross.svg" /></span>
+    </button>
+    <div class="footer-modal">
+      <p class="heading_like">We would love to know your thoughts about us!</p>
+      <textarea class="txt_area" placeholder="Enter your Feedback here." name="review" [(ngModel)]="review"></textarea>
+      <!------<input class="footer-email-input" placeholder="Enter your Email Address" type="email" [(ngModel)]="email">--->
+      <div class="send_bnt"><button class="send_bnt_vies" type="button" (click)="sendFeedBack()">Send</button></div>
+    </div>
+  </div>
+</ng-template>
+<ng-template #testimonial>
+  <!-- <div class="modal-header">
+    <h4 class="modal-title pull-left">Testimonial</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+  <div class="modal-body fd_bc">
+    <button type="button" class="close_km" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true"><img src="../../../assets/images/cross.svg" /></span>
+    </button>
+    <div class="footer-modal">
+      <p class="heading_like">If you like what we do, we don’t mind you telling us about it!</p>
+      <textarea class="txt_area" placeholder="Enter your Feedback here." name="review" [(ngModel)]="review"></textarea>
+      <!-----<input class="footer-email-input" placeholder="Enter your Email Address" type="email" [(ngModel)]="email">----->
+      <div class="send_bnt"><button class="send_bnt_vies" type="button" (click)="sendFeedBack()">Send</button></div>
+    </div>
+   <!-----<div class="ftr_popup_img center">
+       <img src="../../../assets/images/publisher.svg"/>
+       <p>Send us Your picture to display on site.</p>
+    </div>--->
+  </div>
+</ng-template>
+<ng-template #contact>
+  <!-- <div class="modal-header">
+    <h4 class="modal-title pull-left">Contact</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+  <div class="modal-body fd_bc fd_bc2">
+    <button type="button" class="close_km" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true"><img src="../../../assets/images/cross.svg" /></span>
+    </button>
+    <div class="footer-modal">
+      <p class="heading_like">We would love to here from you!</p>
+      <input class="footer-email-input12" placeholder="Enter your Subject here" type="email" [(ngModel)]="email">
+      <textarea class="txt_area" placeholder="Enter your Feedback here." name="review" [(ngModel)]="review"></textarea>
+      <!----- <input class="footer-email-input" placeholder="Enter your Email Address" type="email" [(ngModel)]="email">--->
+      <div class="send_bnt"><button class="send_bnt_vies" type="button" (click)="sendFeedBack()">Send</button></div>
+    </div>
+  </div>
+</ng-template>
+
+
+
